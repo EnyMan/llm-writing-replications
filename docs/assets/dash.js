@@ -3,13 +3,13 @@
      dash.data(id)        -> {status: "loading" | "ok" | "error", data, message}
      dash.calc(id, spec)  derived value from datasets: spec.inputs (ids), spec.fn(...rows) -> rows or a value
      dash.draw(name, fn)  fn(el) for every element with data-draw="name", after data loads and on resize/theme change
-     dash.colors          series colors from the CSS tokens (--series-1..3), light or dark */
+     dash.colors          eight series colors from the CSS tokens (--series-1..8), light or dark, in fixed order */
 (function () {
   const sets = {}, calcs = {}, draws = [];
   let memo = {};
   const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   window.dash = {
-    get colors() { return [css("--series-1"), css("--series-2"), css("--series-3")]; },
+    get colors() { return [1, 2, 3, 4, 5, 6, 7, 8].map((i) => css(`--series-${i}`)); },
     data(id) {
       if (calcs[id]) return (memo[id] ??= runCalc(id));
       return sets[id] || { status: "loading", data: [] };

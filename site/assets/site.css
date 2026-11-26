@@ -28,6 +28,7 @@
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a;
+  --series-4: #eda100; --series-5: #e87ba4; --series-6: #008300; --series-7: #6250d6; --series-8: #e34948;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -36,7 +37,7 @@
     --color-border-line: #2c2c2a; --ds-text-secondary: #c3c2b7; --ds-chart-grid: #2c2c2a; --ds-chart-axis: #383835;
     --ds-chart-reference: #c3c2b7; --ds-surface-popover: #1a1a19; --ds-border: #383835;
     --ds-shadow-popover: 0 4px 16px rgba(0, 0, 0, 0.5);
-    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500; --series-5: #d55181; --series-6: #0ca30c; --series-7: #9085e9; --series-8: #e66767;
     color-scheme: dark;
   }
 }
@@ -45,7 +46,7 @@
   --color-border-line: #2c2c2a; --ds-text-secondary: #c3c2b7; --ds-chart-grid: #2c2c2a; --ds-chart-axis: #383835;
   --ds-chart-reference: #c3c2b7; --ds-surface-popover: #1a1a19; --ds-border: #383835;
   --ds-shadow-popover: 0 4px 16px rgba(0, 0, 0, 0.5);
-  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500; --series-5: #d55181; --series-6: #0ca30c; --series-7: #9085e9; --series-8: #e66767;
   color-scheme: dark;
 }
 @media (max-width: 600px) { :root { --ds-font-size-title: 26px; --ds-gap-xl: 28px; } }
