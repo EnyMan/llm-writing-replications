@@ -57,7 +57,7 @@ def main():
         shutil.rmtree(DOCS)
     shutil.copytree(os.path.join(SITE, "assets"), os.path.join(DOCS, "assets"))
     landing = open(os.path.join(SITE, "index.html"), encoding="utf-8").read()
-    with open(os.path.join(DOCS, "index.html"), "w", encoding="utf-8") as f:
+    with open(os.path.join(DOCS, "index.html"), "w", encoding="utf-8", newline=chr(10)) as f:
         f.write(page("LLM Writing Replications", "Two replications of studies on how AI-written text differs from human writing.",
                      landing, ""))
     for folder, (title, datasets, desc) in PAGES.items():
@@ -67,7 +67,7 @@ def main():
         os.makedirs(os.path.join(out, "data"))
         for d in datasets:
             shutil.copy(os.path.join(ROOT, folder, "report", d + ".json"), os.path.join(out, "data", d + ".json"))
-        with open(os.path.join(out, "index.html"), "w", encoding="utf-8") as f:
+        with open(os.path.join(out, "index.html"), "w", encoding="utf-8", newline=chr(10)) as f:
             f.write(page(title, desc, frag, "../", folder, datasets))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()  # serve files as they are
     print("built", DOCS)
