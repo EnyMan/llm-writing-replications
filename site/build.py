@@ -23,6 +23,8 @@ NAV = ('<nav class="site-nav"><a class="home" href="{up}">LLM writing replicatio
        '<a href="{up}clark2026/"{a2}>Why is AI text hard to read?</a><a href="' + REPO + '">Code and data</a></nav>')
 FOOT = ('<footer class="site-foot"><p>Independent replications, not affiliated with the original authors. '
         'Code MIT, generated data and text CC BY 4.0; third-party corpora keep their own licences.</p>'
+        '<p>Built with the help of AI: code, analyses and these pages were written largely by Claude Code (Anthropic) '
+        'under the author\'s direction and review.</p>'
         '<p><a href="' + REPO + '">Source, data and reproduction guide on GitHub</a></p></footer>')
 
 

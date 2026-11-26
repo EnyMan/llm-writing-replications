@@ -14,47 +14,47 @@
 <main class="site-main">
 <style>
   .rpt { --div-pos: #2a78d6; --div-neg: #e34948; --div-mid: #f0efec;
-         font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-xl); max-width: 1100px; }
+         font-family: var(--font-sans); color: var(--color-fg); display: grid; gap: var(--ds-gap-xl); max-width: 1100px; }
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .rpt { --div-pos: #3987e5; --div-neg: #e66767; --div-mid: #383835; } }
   :root[data-theme="dark"] .rpt { --div-pos: #3987e5; --div-neg: #e66767; --div-mid: #383835; }
-  .rpt h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
-  .rpt h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+  .rpt h1 { font-family: var(--font-serif); font-weight: 400; font-size: var(--ds-font-size-title); margin: 0; text-wrap: balance; }
+  .rpt h2 { font-size: var(--ds-font-size-heading); font-weight: var(--ds-font-weight-medium); margin: 0; text-wrap: balance; }
   .rpt p { margin: 0; max-width: 72ch; line-height: 1.55; }
-  .rpt .lede { font-size: var(--cds-font-size-body); }
-  .rpt .muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .rpt section { display: grid; gap: var(--cds-gap-md); min-width: 0; }
-  .rpt .num { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
+  .rpt .lede { font-size: var(--ds-font-size-body); }
+  .rpt .muted { color: var(--color-fg-muted); font-size: var(--ds-font-size-caption); }
+  .rpt section { display: grid; gap: var(--ds-gap-md); min-width: 0; }
+  .rpt .num { font-variant-numeric: tabular-nums; font-weight: var(--ds-font-weight-medium); }
   .rpt .chart { position: relative; min-height: 280px; min-width: 0; }
   .rpt .chart.tall { min-height: 560px; }
   .rpt .scroll { overflow-x: auto; }
-  .rpt svg text { font-family: var(--font-anthropic-sans); }
-  .rpt .axis text, .rpt .tick-label { fill: var(--cds-text-secondary); font-size: 11px; }
-  .rpt .axis path, .rpt .axis line { stroke: var(--cds-chart-axis); }
-  .rpt .grid line { stroke: var(--cds-chart-grid); }
+  .rpt svg text { font-family: var(--font-sans); }
+  .rpt .axis text, .rpt .tick-label { fill: var(--ds-text-secondary); font-size: 11px; }
+  .rpt .axis path, .rpt .axis line { stroke: var(--ds-chart-axis); }
+  .rpt .grid line { stroke: var(--ds-chart-grid); }
   .rpt .row-label { fill: var(--color-fg); font-size: 12px; }
   .rpt .val-label { fill: var(--color-fg-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
-  .rpt .legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .rpt .legend { display: flex; flex-wrap: wrap; gap: var(--ds-gap-sm) var(--ds-gap-lg); font-size: var(--ds-font-size-caption); color: var(--color-fg-muted); }
   .rpt .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .rpt .legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
-  .rpt .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border);
-              box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 8px; font-size: 12px; line-height: 1.4;
+  .rpt .tip { position: absolute; pointer-events: none; background: var(--ds-surface-popover); border: 1px solid var(--ds-border);
+              box-shadow: var(--ds-shadow-popover); border-radius: var(--ds-radius); padding: 6px 8px; font-size: 12px; line-height: 1.4;
               color: var(--color-fg); max-width: 260px; z-index: 5; }
-  .rpt .tip .muted { color: var(--cds-text-secondary); }
-  .rpt table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); }
+  .rpt .tip .muted { color: var(--ds-text-secondary); }
+  .rpt table { border-collapse: collapse; width: 100%; font-size: var(--ds-font-size-caption); }
   .rpt th, .rpt td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
-  .rpt th { color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
-  .rpt .scale { display: flex; align-items: center; gap: 8px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); flex-wrap: wrap; }
+  .rpt th { color: var(--color-fg-muted); font-weight: var(--ds-font-weight-medium); }
+  .rpt .scale { display: flex; align-items: center; gap: 8px; font-size: var(--ds-font-size-caption); color: var(--color-fg-muted); flex-wrap: wrap; }
   .rpt .scale .bar { width: 180px; height: 10px; border-radius: 2px;
                      background: linear-gradient(90deg, var(--div-neg), var(--div-mid), var(--div-pos)); }
-  .rpt .pending { border: 1px solid var(--color-border-line); background: var(--color-panel); border-radius: var(--cds-radius);
-                  padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); }
+  .rpt .pending { border: 1px solid var(--color-border-line); background: var(--color-panel); border-radius: var(--ds-radius);
+                  padding: var(--ds-pad-lg); display: grid; gap: var(--ds-gap-sm); }
   .rpt .pending ul, .rpt details ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; max-width: 72ch; line-height: 1.5; }
-  .rpt details summary { cursor: pointer; font-weight: var(--cds-font-weight-medium); }
-  .rpt details[open] { display: grid; gap: var(--cds-gap-sm); }
+  .rpt details summary { cursor: pointer; font-weight: var(--ds-font-weight-medium); }
+  .rpt details[open] { display: grid; gap: var(--ds-gap-sm); }
 </style>
 
 <div class="rpt">
-  <header id="top" style="display:grid; gap: var(--cds-gap-sm)">
+  <header id="top" style="display:grid; gap: var(--ds-gap-sm)">
     <h1>Do LLMs write like humans? A replication, and 25 models later</h1>
     <p class="lede" data-read lang="en">
       We reran Reinhart et al. (2025) on 900 human texts from the HAP-E corpus and reproduced the paper's effect sizes
@@ -94,7 +94,7 @@
   <section id="pairs">
     <h2>What a finetune or a system prompt changes</h2>
     <p data-read lang="en">Each row compares two versions of the same model on the same documents: a community finetune against the model it was trained from, Claude with Claude Code's default system prompt against a minimal one, and Haiku through the API against Haiku through Claude Code. The arrow runs from the first to the second; left is closer to human. Hemmingway-1 roughly halves its parent's distance from human writing, while the Antislop finetune of the same parent moves further away.</p>
-    <div class="legend"><span><i style="background: var(--cds-chart-muted)"></i>first version</span><span><i data-draw="pairs-swatch"></i>second version</span></div>
+    <div class="legend"><span><i style="background: var(--ds-chart-muted)"></i>first version</span><span><i data-draw="pairs-swatch"></i>second version</span></div>
     <div class="chart" id="pairs-chart" data-draw="pairs" data-source="pairs"></div>
     <p class="muted">Features changed counts the Biber features whose paired difference is significant after Bonferroni correction (Wilcoxon). The Haiku route comparison is confounded: Haiku thinks about 5,000 tokens per text through Claude Code but ran with reasoning off through the API.</p>
   </section>
@@ -111,9 +111,9 @@
   </section>
 
   <section id="pending" class="pending">
-    <h2>Still to come</h2>
+    <h2>Not included</h2>
     <ul>
-      <li>Claude Fable 5.2 through Claude Code, in both conditions. Only a 12-text pilot has run so far.</li>
+      <li>Claude Fable 5.2 through Claude Code: only a 12-text pilot per condition was run, too few to analyse, so it is left out (the pilot is in the release under <code>out/_discarded/</code>).</li>
     </ul>
   </section>
 
@@ -227,7 +227,7 @@ dash.draw('rep-scatter', (el) => {
   svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6));
   svg.append('g').attr('class', 'axis').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6));
   svg.append('line').attr('x1', x(-lim)).attr('y1', y(-lim)).attr('x2', x(lim)).attr('y2', y(lim))
-    .style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+    .style('stroke', 'var(--ds-chart-reference)').attr('stroke-dasharray', '4 4');
   svg.append('text').attr('class', 'tick-label').attr('x', (m.l + W - m.r) / 2).attr('y', H - 6).attr('text-anchor', 'middle').text("Paper's d (Table S6)");
   svg.append('text').attr('class', 'tick-label').attr('transform', `translate(12,${(m.t + H - m.b) / 2}) rotate(-90)`).attr('text-anchor', 'middle').text('Our d');
   const t = RPT.tip(el);
@@ -342,8 +342,8 @@ dash.draw('pairs', (el) => {
   g.append('text').attr('class', 'row-label').attr('x', m.l - 12).attr('y', mid - 3).attr('text-anchor', 'end').text((r) => r.to_label);
   g.append('text').attr('class', 'tick-label').attr('x', m.l - 12).attr('y', mid + 11).attr('text-anchor', 'end').text((r) => 'vs ' + r.from_label);
   g.append('line').attr('x1', (r) => x(r.a)).attr('x2', (r) => x(r.b)).attr('y1', mid).attr('y2', mid)
-    .style('stroke', 'var(--cds-chart-muted)').style('stroke-width', 2);
-  g.append('circle').attr('cx', (r) => x(r.a)).attr('cy', mid).attr('r', 5).style('fill', 'var(--cds-chart-muted)');
+    .style('stroke', 'var(--ds-chart-muted)').style('stroke-width', 2);
+  g.append('circle').attr('cx', (r) => x(r.a)).attr('cy', mid).attr('r', 5).style('fill', 'var(--ds-chart-muted)');
   g.append('circle').attr('cx', (r) => x(r.b)).attr('cy', mid).attr('r', 6).style('fill', dash.colors[0])
     .style('stroke', 'var(--color-bg)').style('stroke-width', 2);
   if (!narrow) g.append('text').attr('class', 'val-label').attr('x', W).attr('y', mid).attr('dy', '0.35em').attr('text-anchor', 'end')
@@ -364,6 +364,6 @@ dash.draw('vocab-rows', (el) => {
 </script>
 
 </main>
-<footer class="site-foot"><p>Independent replications, not affiliated with the original authors. Code MIT, generated data and text CC BY 4.0; third-party corpora keep their own licences.</p><p><a href="https://github.com/EnyMan/llm-writing-replications">Source, data and reproduction guide on GitHub</a></p></footer>
+<footer class="site-foot"><p>Independent replications, not affiliated with the original authors. Code MIT, generated data and text CC BY 4.0; third-party corpora keep their own licences.</p><p>Built with the help of AI: code, analyses and these pages were written largely by Claude Code (Anthropic) under the author's direction and review.</p><p><a href="https://github.com/EnyMan/llm-writing-replications">Source, data and reproduction guide on GitHub</a></p></footer>
 </body>
 </html>

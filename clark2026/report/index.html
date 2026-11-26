@@ -1,43 +1,43 @@
 <meta name="dash-one-writer">
 <style>
-  .crp { font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-xl); max-width: 1100px; }
-  .crp h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
-  .crp h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
-  .crp h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .crp { font-family: var(--font-sans); color: var(--color-fg); display: grid; gap: var(--ds-gap-xl); max-width: 1100px; }
+  .crp h1 { font-family: var(--font-serif); font-weight: 400; font-size: var(--ds-font-size-title); margin: 0; text-wrap: balance; }
+  .crp h2 { font-size: var(--ds-font-size-heading); font-weight: var(--ds-font-weight-medium); margin: 0; text-wrap: balance; }
+  .crp h3 { font-size: var(--ds-font-size-body); font-weight: var(--ds-font-weight-medium); margin: 0; }
   .crp p { margin: 0; max-width: 72ch; line-height: 1.55; }
-  .crp .muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .crp section { display: grid; gap: var(--cds-gap-md); min-width: 0; }
-  .crp .num { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
-  .crp .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--cds-gap-lg); }
+  .crp .muted { color: var(--color-fg-muted); font-size: var(--ds-font-size-caption); }
+  .crp section { display: grid; gap: var(--ds-gap-md); min-width: 0; }
+  .crp .num { font-variant-numeric: tabular-nums; font-weight: var(--ds-font-weight-medium); }
+  .crp .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--ds-gap-lg); }
   .crp .panel { display: grid; gap: 4px; min-width: 0; }
   .crp .chart { position: relative; min-height: 170px; min-width: 0; }
-  .crp svg text { font-family: var(--font-anthropic-sans); }
-  .crp .tick-label { fill: var(--cds-text-secondary); font-size: 11px; }
+  .crp svg text { font-family: var(--font-sans); }
+  .crp .tick-label { fill: var(--ds-text-secondary); font-size: 11px; }
   .crp .row-label { fill: var(--color-fg); font-size: 12px; }
-  .crp .grid line { stroke: var(--cds-chart-grid); }
-  .crp .legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); align-items: center; }
+  .crp .grid line { stroke: var(--ds-chart-grid); }
+  .crp .legend { display: flex; flex-wrap: wrap; gap: var(--ds-gap-sm) var(--ds-gap-lg); font-size: var(--ds-font-size-caption); color: var(--color-fg-muted); align-items: center; }
   .crp .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .crp .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
   .crp .legend .diamond { width: 8px; height: 8px; border-radius: 0; transform: rotate(45deg); border: 1.5px solid var(--color-fg-muted); background: transparent; }
-  .crp .legend .dash { width: 14px; height: 0; border-radius: 0; border-top: 1.5px dashed var(--cds-chart-reference); }
-  .crp .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border);
-              box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 8px; font-size: 12px; line-height: 1.4;
+  .crp .legend .dash { width: 14px; height: 0; border-radius: 0; border-top: 1.5px dashed var(--ds-chart-reference); }
+  .crp .tip { position: absolute; pointer-events: none; background: var(--ds-surface-popover); border: 1px solid var(--ds-border);
+              box-shadow: var(--ds-shadow-popover); border-radius: var(--ds-radius); padding: 6px 8px; font-size: 12px; line-height: 1.4;
               color: var(--color-fg); max-width: 260px; z-index: 5; }
-  .crp .tip .muted { color: var(--cds-text-secondary); }
+  .crp .tip .muted { color: var(--ds-text-secondary); }
   .crp .scroll { overflow-x: auto; }
-  .crp table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); }
+  .crp table { border-collapse: collapse; width: 100%; font-size: var(--ds-font-size-caption); }
   .crp th, .crp td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
-  .crp th { color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+  .crp th { color: var(--color-fg-muted); font-weight: var(--ds-font-weight-medium); }
   .crp td.n { font-variant-numeric: tabular-nums; }
   .crp ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 76ch; line-height: 1.5; }
-  .crp .pending { border: 1px solid var(--color-border-line); background: var(--color-panel); border-radius: var(--cds-radius);
-                  padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); }
-  .crp details summary { cursor: pointer; font-weight: var(--cds-font-weight-medium); }
-  .crp details[open] { display: grid; gap: var(--cds-gap-sm); }
+  .crp .pending { border: 1px solid var(--color-border-line); background: var(--color-panel); border-radius: var(--ds-radius);
+                  padding: var(--ds-pad-lg); display: grid; gap: var(--ds-gap-sm); }
+  .crp details summary { cursor: pointer; font-weight: var(--ds-font-weight-medium); }
+  .crp details[open] { display: grid; gap: var(--ds-gap-sm); }
 </style>
 
 <div class="crp">
-  <header id="top" style="display:grid; gap: var(--cds-gap-sm)">
+  <header id="top" style="display:grid; gap: var(--ds-gap-sm)">
     <h1>Why is AI-generated language so hard to understand? A replication</h1>
     <p data-read lang="en">
       Clark, Martin and Mahowald (2026) measure eight features linked to reading difficulty in AI-written text and compare them with human writing.
@@ -87,10 +87,10 @@
   </section>
 
   <section id="pending" class="pending">
-    <h2>Still to come</h2>
+    <h2>Scope</h2>
     <ul>
       <li>The paper's second experiment (a length penalty during reinforcement learning) is out of scope for this replication.</li>
-      <li>Nothing else is planned; the session counts and discarded runs are listed in the notes below.</li>
+      <li>Session counts per model and every discarded run are listed in the notes below.</li>
     </ul>
   </section>
 
@@ -202,7 +202,7 @@ const drawPanels = (setting) => (el) => {
     svg.append("g").selectAll("text").data(x.ticks(4)).join("text").attr("class", "tick-label")
       .attr("x", (v) => x(v)).attr("y", H - 6).attr("text-anchor", "middle").text((v) => d3.format("~s")(v));
     if (human) svg.append("line").attr("x1", x(human.ours)).attr("x2", x(human.ours)).attr("y1", mg.t).attr("y2", H - mg.b)
-      .style("stroke", "var(--cds-chart-reference)").attr("stroke-dasharray", "4 3");
+      .style("stroke", "var(--ds-chart-reference)").attr("stroke-dasharray", "4 3");
     const t = CRP.tip(box);
     const g = svg.append("g").selectAll("g").data(rs).join("g").attr("transform", (r) => `translate(0,${y(r.source)})`);
     const mid = y.bandwidth() / 2;

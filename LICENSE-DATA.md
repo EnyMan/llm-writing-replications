@@ -12,3 +12,7 @@ licences (HAP-E: MIT; PERSUADE 2.0: CC BY 4.0; StackExchange: CC BY-SA; Wikipedi
 Torchcast Decision 4B: Apache-2.0), and the original papers. `reinhart2025/paper_table_s6.csv` and
 `clark2026/paper_values.csv` hold numbers reported in (or read from figures of) the original papers, included for comparison.
 Model outputs may also be subject to the terms of the providers that produced them.
+
+The coding-agent transcripts in the release include diffs against five MIT-licensed repositories, used as the
+coding tasks: alichtman/shallow-backup, funkybob/stencil, fabiocaccamo/python-fsutil, con2/emrichen and
+obijywk/grilops (copyright their respective authors).

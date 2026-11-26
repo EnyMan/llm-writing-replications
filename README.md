@@ -10,6 +10,11 @@ The reports are on the project site: **https://enyman.github.io/llm-writing-repl
 
 These are independent replications, not affiliated with the papers' authors. The papers themselves are not included; read them on arXiv.
 
+> **Made with AI assistance.** This project was built with the help of AI: the code, the analyses, the report pages and
+> this documentation were written largely by Claude Code (Anthropic), working under the direction and review of the
+> repository's author, who chose the studies, models, budgets and methodological decisions. AI-written code and text can
+> contain mistakes; the checks in [`AGENTS.md`](AGENTS.md) and the released outputs are there so anyone can verify the results.
+
 ## What is in the repository
 
 - **Code** for every step: generation, feature extraction, statistics, report data, and the site (`site/`, built into `docs/`).
