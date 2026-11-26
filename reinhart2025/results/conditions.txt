@@ -1,0 +1,87 @@
+
+claude-haiku-5-5@minimal  ->  claude-haiku-5-5@default  (813 paired docs)
+  12/67 features differ (Bonferroni); largest |d| 0.45
+  mean |d| vs human: 0.185 -> 0.174
+    f_44_mean_word_length            d = -0.45
+    f_40_adj_attr                    d = -0.27
+    f_19_be_main_verb                d = +0.25
+    f_43_type_token                  d = -0.23
+    f_14_nominalizations             d = -0.20
+    f_03_present_tense               d = +0.18
+    f_25_present_participle          d = -0.16
+    f_65_clausal_coordination        d = +0.16
+
+claude-sonnet-5-5@minimal  ->  claude-sonnet-5-5@default  (897 paired docs)
+  0/67 features differ (Bonferroni); largest |d| 0.08
+  mean |d| vs human: 0.138 -> 0.144
+
+claude-opus-5-5@minimal  ->  claude-opus-5-5@default  (854 paired docs)
+  1/67 features differ (Bonferroni); largest |d| 0.24
+  mean |d| vs human: 0.120 -> 0.126
+    f_44_mean_word_length            d = -0.24
+skip claude-fable-5-2@minimal vs claude-fable-5-2@default: not tagged yet
+
+anthropic__claude-haiku-5.5  ->  claude-haiku-5-5@minimal  (803 paired docs)
+  14/67 features differ (Bonferroni); largest |d| 0.41
+  mean |d| vs human: 0.208 -> 0.185
+    f_16_other_nouns                 d = +0.41
+    f_51_demonstratives              d = -0.23
+    f_03_present_tense               d = +0.22
+    f_65_clausal_coordination        d = -0.21
+    f_24_infinitives                 d = -0.21
+    f_20_existential_there           d = -0.21
+    f_02_perfect_aspect              d = -0.19
+    f_39_prepositions                d = -0.18
+
+z-ai__glm-5.3-flash  ->  nanogpt_z-ai__glm-5.3-flash-uncensored  (895 paired docs)
+  1/67 features differ (Bonferroni); largest |d| 0.11
+  mean |d| vs human: 0.136 -> 0.134
+    f_43_type_token                  d = +0.11
+
+deepseek__deepseek-v4.1-flash  ->  nanogpt_deepseek__deepseek-v4.1-flash-uncensored  (895 paired docs)
+  11/67 features differ (Bonferroni); largest |d| 0.36
+  mean |d| vs human: 0.135 -> 0.153
+    f_06_first_person_pronouns       d = -0.36
+    f_67_neg_analytic                d = -0.35
+    f_56_verb_private                d = -0.23
+    f_24_infinitives                 d = -0.20
+    f_42_adverbs                     d = -0.19
+    f_16_other_nouns                 d = +0.17
+    f_51_demonstratives              d = -0.17
+    f_29_that_subj                   d = -0.16
+
+google__gemma-4-31b-it  ->  nanogpt_Gemma-4-31B-Gembrain-uncensored-heretic  (898 paired docs)
+  18/67 features differ (Bonferroni); largest |d| 0.32
+  mean |d| vs human: 0.267 -> 0.230
+    f_39_prepositions                d = -0.32
+    f_14_nominalizations             d = -0.25
+    f_65_clausal_coordination        d = +0.23
+    f_19_be_main_verb                d = +0.23
+    f_08_third_person_pronouns       d = +0.21
+    f_41_adj_pred                    d = +0.19
+    f_50_discourse_particles         d = +0.19
+    f_09_pronoun_it                  d = +0.18
+
+nanogpt_qwen__qwen3.8-27b  ->  nanogpt_qwen__qwen3.8-27b-antislop  (895 paired docs)
+  51/67 features differ (Bonferroni); largest |d| 0.90
+  mean |d| vs human: 0.227 -> 0.339
+    f_39_prepositions                d = +0.90
+    f_24_infinitives                 d = +0.89
+    f_67_neg_analytic                d = -0.81
+    f_02_perfect_aspect              d = +0.75
+    f_19_be_main_verb                d = -0.70
+    f_03_present_tense               d = -0.60
+    f_38_other_adv_sub               d = +0.60
+    f_63_split_auxiliary             d = +0.58
+
+nanogpt_qwen__qwen3.8-27b  ->  ollama_richardyoung__hemmingway-1_Q4_K_M  (893 paired docs)
+  41/67 features differ (Bonferroni); largest |d| 0.61
+  mean |d| vs human: 0.227 -> 0.143
+    f_29_that_subj                   d = -0.61
+    f_40_adj_attr                    d = -0.58
+    f_02_perfect_aspect              d = +0.55
+    f_25_present_participle          d = -0.53
+    f_11_indefinite_pronouns         d = +0.51
+    f_14_nominalizations             d = -0.49
+    f_65_clausal_coordination        d = +0.48
+    f_55_verb_public                 d = +0.45

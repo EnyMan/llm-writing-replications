@@ -1,0 +1,42 @@
+[project]
+name = "llm-writing-replications"
+version = "1.0.0"
+description = "Replications of Reinhart et al. (2025) and Clark, Martin & Mahowald (2026) on AI-written text, extended to recent models"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=17",
+    "polars<2",            # pybiber 0.3 breaks on polars 2
+    "pybiber>=0.3.1",
+    "spacy>=3.8",
+    "spacy-curated-transformers>=0.3",
+    "en-core-web-sm",
+    "en-core-web-trf",
+    "torch>=2.6",
+    "numpy>=2",
+    "scipy>=1.13",
+    "scikit-learn>=1.5",
+    "syntok>=1.4",
+    "huggingface-hub>=0.25",
+    "gdown>=5",
+    "pymupdf>=1.24",
+]
+
+[project.optional-dependencies]
+# spaCy's transformer parser on the GPU (the Clark replication parses ~1M sentences); CUDA 12
+gpu = ["cupy-cuda12x[ctk]>=13"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }
+en-core-web-trf = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.8.0/en_core_web_trf-3.8.0-py3-none-any.whl" }
+torch = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

@@ -1,0 +1,24 @@
+396 feature x model cells; overall r = 0.992, sign agreement (|d_paper| > 0.2): 100.0%
+                            r  mean_abs_diff
+source                                      
+gpt-4o-2024-08-06       0.997          0.033
+gpt-4o-mini-2024-07-18  0.997          0.033
+llama-3-70B             0.957          0.030
+llama-3-70B-Instruct    0.983          0.036
+llama-3-8B              0.978          0.028
+llama-3-8B-Instruct     0.978          0.041
+
+Largest disagreements:
+                     feature                 source  d_paper  d_ours  diff
+           f_39_prepositions            llama-3-70B    -0.09   -0.31 -0.22
+          f_38_other_adv_sub    llama-3-8B-Instruct     0.13    0.32  0.19
+          f_38_other_adv_sub   llama-3-70B-Instruct     0.07    0.25  0.18
+             f_48_amplifiers    llama-3-8B-Instruct    -0.33   -0.16  0.17
+            f_16_other_nouns             llama-3-8B    -0.09   -0.25 -0.16
+           f_39_prepositions   llama-3-70B-Instruct     0.02    0.17  0.15
+          f_38_other_adv_sub      gpt-4o-2024-08-06     0.21    0.34  0.13
+f_28_present_participle_whiz   llama-3-70B-Instruct     0.10    0.23  0.13
+           f_19_be_main_verb gpt-4o-mini-2024-07-18    -0.94   -0.82  0.12
+              f_23_wh_clause      gpt-4o-2024-08-06    -0.24   -0.12  0.12
+   f_27_past_participle_whiz   llama-3-70B-Instruct    -0.13   -0.02  0.11
+           f_19_be_main_verb      gpt-4o-2024-08-06    -0.83   -0.72  0.11

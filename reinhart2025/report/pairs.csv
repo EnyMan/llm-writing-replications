@@ -1,0 +1,10 @@
+comparison,from_label,to_label,docs,features_sig,max_abs_d,from_d,to_d,from_rf,to_rf,top_shifts
+Claude Code prompt,Claude Haiku 5.5 [minimal],Claude Haiku 5.5 [default],813,12,0.45,0.185,0.174,96.3,96.2,mean_word_length -0.45; adj_attr -0.27; be_main_verb +0.25; type_token -0.23; nominalizations -0.20; present_tense +0.18
+Claude Code prompt,Claude Sonnet 5.5 [minimal],Claude Sonnet 5.5 [default],897,0,0.08,0.138,0.144,90.5,89.1,
+Claude Code prompt,Claude Opus 5.5 [minimal],Claude Opus 5.5 [default],854,1,0.24,0.12,0.126,92.1,93.0,mean_word_length -0.24
+Route: API vs claude -p,Claude Haiku 5.5,Claude Haiku 5.5 [minimal],803,14,0.41,0.208,0.185,94.4,96.3,other_nouns +0.41; demonstratives -0.23; present_tense +0.22; clausal_coordination -0.21; infinitives -0.21; existential_there -0.21
+Finetune vs parent,GLM 5.3 Flash,GLM 5.3 Flash Uncensored,895,1,0.11,0.136,0.134,92.3,93.2,type_token +0.11
+Finetune vs parent,DeepSeek v4.1 Flash,DeepSeek v4.1 Flash Uncensored,895,11,0.36,0.135,0.153,89.6,90.3,first_person_pronouns -0.36; neg_analytic -0.35; verb_private -0.23; infinitives -0.20; adverbs -0.19; other_nouns +0.17
+Finetune vs parent,Gemma 4 31B IT,Gemma 4 31B Gembrain (heretic),898,18,0.32,0.267,0.23,91.9,89.0,prepositions -0.32; nominalizations -0.25; clausal_coordination +0.23; be_main_verb +0.23; third_person_pronouns +0.21; adj_pred +0.19
+Finetune vs parent,Qwen 3.8 27B,Qwen 3.8 27B Antislop,895,51,0.9,0.227,0.339,96.2,95.7,prepositions +0.90; infinitives +0.89; neg_analytic -0.81; perfect_aspect +0.75; be_main_verb -0.70; present_tense -0.60
+Finetune vs parent,Qwen 3.8 27B,"Hemmingway-1 (Qwen 3.8 27B, local Q4)",893,41,0.61,0.227,0.143,96.2,89.6,that_subj -0.61; adj_attr -0.58; perfect_aspect +0.55; present_participle -0.53; indefinite_pronouns +0.51; nominalizations -0.49

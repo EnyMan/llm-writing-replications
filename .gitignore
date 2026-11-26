@@ -1,0 +1,21 @@
+# secrets
+.env
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+# third-party data, models and model outputs (outputs ship as release assets: scripts/fetch_outputs.py)
+reinhart2025/data/
+reinhart2025/out/
+reinhart2025/claude_kit/prompts.jsonl
+reinhart2025/claude_kit/out/
+clark2026/data/*
+!clark2026/data/assignments.json
+!clark2026/data/stackexchange_files.json
+clark2026/models/
+clark2026/parsed*/
+clark2026/out/*
+!clark2026/out/comparison_*.csv
+!clark2026/out/jev_rates*.csv
+!clark2026/out/ngram_rates*.csv
+release/

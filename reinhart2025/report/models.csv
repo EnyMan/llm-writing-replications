@@ -1,0 +1,41 @@
+model,label,group,texts_used,dropped_pct,mean_abs_d,features_large_d,rf_acc,lasso_acc,gen_cost_usd
+llama-3-70B,Llama 3 70B (base),2024 base model,900,0.0,0.114,0,88.3,72.5,
+claude-opus-5-5@minimal,Claude Opus 5.5 [minimal],Claude via claude -p (minimal),882,2.0,0.12,1,92.1,78.3,0
+claude-opus-5-5@default,Claude Opus 5.5 [default],Claude via claude -p (default),864,4.0,0.126,1,93.0,78.9,0
+nanogpt_z-ai__glm-5.3-flash-uncensored,GLM 5.3 Flash Uncensored,2026 community finetune,899,0.1,0.134,1,93.2,82.1,0.74
+deepseek__deepseek-v4.1-flash,DeepSeek v4.1 Flash,2026 general model,896,0.4,0.135,1,89.6,82.7,0.46
+z-ai__glm-5.3-flash,GLM 5.3 Flash,2026 general model,896,0.4,0.136,2,92.3,81.1,0.44
+claude-sonnet-5-5@minimal,Claude Sonnet 5.5 [minimal],Claude via claude -p (minimal),900,0.0,0.138,1,90.5,83.3,0
+llama-3-8B,Llama 3 8B (base),2024 base model,900,0.0,0.138,1,91.9,74.5,
+deepseek__deepseek-v4.1-flash-1017,DeepSeek v4.1 Flash (1017),2026 general model,895,0.6,0.141,1,90.0,83.4,0.4
+ollama_richardyoung__hemmingway-1_Q4_K_M,"Hemmingway-1 (Qwen 3.8 27B, local Q4)",2026 community finetune,894,0.7,0.143,2,89.6,79.1,0
+baidu__ernie-5.5-flash-preview_free@nocount,ERNIE 5.5 Flash,2026 general model,882,2.0,0.143,3,93.9,83.3,0
+claude-sonnet-5-5@default,Claude Sonnet 5.5 [default],Claude via claude -p (default),897,0.3,0.144,1,89.1,83.9,0
+nanogpt_deepseek__deepseek-v4.1-flash-uncensored,DeepSeek v4.1 Flash Uncensored,2026 community finetune,898,0.2,0.153,2,90.3,83.3,0.95
+deepseek__deepseek-v4-flash,DeepSeek v4 Flash,2026 general model,893,0.8,0.155,1,94.3,87.7,0.27
+minimax__minimax-m3.1-flash@nocount,MiniMax M3.1 Flash,2026 general model,894,0.7,0.159,3,92.5,89.1,0.91
+xiaomi__mimo-v2.6-flash,MiMo v2.6 Flash,2026 general model,891,1.0,0.168,5,89.1,84.8,0.25
+deepseek__deepseek-v4-flash-0731,DeepSeek v4 Flash (0731),2026 general model,891,1.0,0.174,3,93.2,91.7,0.23
+claude-haiku-5-5@default,Claude Haiku 5.5 [default],Claude via claude -p (default),849,5.7,0.174,2,96.2,88.2,0
+upstage__solar-mini4,Solar Mini 4,2026 general model,894,0.7,0.18,4,95.4,92.9,0.15
+claude-haiku-5-5@minimal,Claude Haiku 5.5 [minimal],Claude via claude -p (minimal),824,8.4,0.185,2,96.3,89.3,0
+xiaomi__mimo-v2.6-pro,MiMo v2.6 Pro,2026 general model,898,0.2,0.194,4,94.4,88.5,0.91
+nvidia__nemotron-3.5-super-vl,Nemotron 3.5 Super VL,2026 general model,898,0.2,0.197,5,91.7,87.4,0.46
+tencent__hy3,Hy3,2026 general model,899,0.1,0.203,4,92.1,90.5,0.4
+anthropic__claude-haiku-5.5,Claude Haiku 5.5,2026 general model,864,4.0,0.208,4,94.4,90.0,0.51
+llama-3-70B-Instruct,Llama 3 70B Instruct,2024 instruction-tuned,900,0.0,0.213,5,93.5,92.3,
+llama-3-8B-Instruct,Llama 3 8B Instruct,2024 instruction-tuned,900,0.0,0.217,5,94.1,93.9,
+tencent__hy4-flash,Hy4 Flash,2026 general model,897,0.3,0.224,3,96.4,88.2,0.13
+mistralai__mistral-small-3.1-24b-instruct,Mistral Small 3.1 24B,2026 general model,892,0.9,0.224,6,93.2,93.4,0.51
+nanogpt_qwen__qwen3.8-27b,Qwen 3.8 27B,2026 general model,899,0.1,0.227,5,96.2,94.1,0.61
+nanogpt_Gemma-4-31B-Gembrain-uncensored-heretic,Gemma 4 31B Gembrain (heretic),2026 community finetune,900,0.0,0.23,7,89.0,87.6,0.35
+openai__gpt-6-luna,GPT-6 Luna,2026 general model,692,23.1,0.247,9,97.7,93.3,1.87
+tencent__hy4,Hy4,2026 general model,893,0.8,0.266,7,98.2,95.2,2.29
+google__gemma-4-31b-it,Gemma 4 31B IT,2026 general model,898,0.2,0.267,8,91.9,91.2,0.25
+nvidia__nemotron-3.5-lightning,Nemotron 3.5 Lightning,2026 general model,893,0.8,0.29,9,92.3,89.6,0.24
+qwen__qwen3.8-flash,Qwen 3.8 Flash,2026 general model,898,0.2,0.293,10,96.4,97.1,0.39
+google__gemini-3.8-flash_floor,Gemini 3.8 Flash,2026 general model,723,19.7,0.327,13,91.8,92.9,1.22
+nanogpt_qwen__qwen3.8-27b-antislop,Qwen 3.8 27B Antislop,2026 community finetune,896,0.4,0.339,11,95.7,93.5,0.35
+nvidia__nemotron-3-ultra-550b-a55b_free,Nemotron 3 Ultra 550B,2026 general model,900,0.0,0.377,17,94.8,94.8,0
+gpt-4o-mini-2024-07-18,GPT-4o mini,2024 instruction-tuned,900,0.0,0.383,14,96.2,95.3,
+gpt-4o-2024-08-06,GPT-4o,2024 instruction-tuned,900,0.0,0.412,20,96.8,96.8,

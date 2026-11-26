@@ -1,0 +1,44 @@
+900 paired docs, 6 LLMs, 67 features
+
+1) 7-way RF accuracy 63.2% (chance 14.3%); LLM->human 5.9%, human->LLM 14.4%
+                        human-chunk-2  gpt-4o-2024-08-06  gpt-4o-mini-2024-07-18  llama-3-70B-Instruct  llama-3-8B-Instruct  llama-3-70B  llama-3-8B
+human-chunk-2                     190                  4                       0                     4                    5            6          13
+gpt-4o-2024-08-06                   4                167                      47                     0                    1            3           0
+gpt-4o-mini-2024-07-18              5                 34                     170                     7                    0            4           2
+llama-3-70B-Instruct               21                  9                       2                    94                   83            9           4
+llama-3-8B-Instruct                 9                  3                       1                    41                  163            1           4
+llama-3-70B                        22                  8                       4                     0                   10           82          96
+llama-3-8B                         18                  3                       2                     3                    9           71         116
+
+2) Rate vs human (top 15 RF features; * = Bonferroni p < .05)
+source                    gpt-4o-2024-08-06 gpt-4o-mini-2024-07-18 llama-3-70B-Instruct llama-3-8B-Instruct llama-3-70B llama-3-8B
+feature                                                                                                                           
+f_43_type_token                       1.13*                  1.10*                0.91*               0.82*       1.02*      0.97 
+f_25_present_participle               4.90*                  4.41*                2.42*               2.05*       0.97       0.85*
+f_29_that_subj                        2.77*                  3.66*                1.80*               1.96*       0.64*      0.64*
+f_44_mean_word_length                 1.16*                  1.14*                1.03*               1.00        1.00       0.99*
+f_42_adverbs                          0.83*                  0.86*                0.74*               0.73*       1.02       1.01 
+f_14_nominalizations                  2.16*                  2.08*                1.54*               1.41*       0.91*      0.86*
+f_64_phrasal_coordination             1.90*                  1.46*                1.68*               1.81*       0.94       0.88*
+f_40_adj_attr                         1.52*                  1.42*                1.06*               0.97        0.82*      0.77*
+f_65_clausal_coordination             0.61*                  0.67*                1.32*               1.49*       1.12       1.16*
+f_17_agentless_passives               0.52*                  0.52*                0.88*               0.94        0.94*      1.00 
+f_16_other_nouns                      1.04*                  0.98                 0.96*               0.91*       0.95*      0.91*
+f_51_demonstratives                   1.27*                  1.32*                0.78*               0.76*       0.74*      0.74*
+f_39_prepositions                     1.20*                  1.21*                1.04*               1.02        0.91*      0.88*
+f_24_infinitives                      0.84*                  0.85*                1.30*               1.40*       1.12       1.16*
+f_38_other_adv_sub                    1.31*                  1.44*                1.26*               1.38*       0.93       0.81*
+
+   gpt-4o-2024-08-06 vs paper (rate, d):
+   f_25_present_participle      ours 4.90x d=1.34 | paper 5.3x d=1.38
+   f_29_that_subj               ours 2.77x d=0.81 | paper 2.6x d=0.77
+   f_14_nominalizations         ours 2.16x d=1.29 | paper 2.1x d=1.23
+   f_64_phrasal_coordination    ours 1.90x d=0.80 | paper 1.9x d=0.81
+
+3) Pairwise test accuracy, human vs LLM:     RF     lasso
+   gpt-4o-2024-08-06                         96.8%  96.8%
+   gpt-4o-mini-2024-07-18                    96.2%  95.3%
+   llama-3-70B-Instruct                      93.5%  92.3%
+   llama-3-8B-Instruct                       94.1%  93.9%
+   llama-3-70B                               88.3%  72.5%
+   llama-3-8B                                91.9%  74.5%

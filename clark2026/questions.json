@@ -1,0 +1,53 @@
+{
+  "v1": {
+    "note": "first Jev wording: example lists (validated 12/12 inanimate, 11/12 denominal on the paper's examples)",
+    "denominal": {
+      "instructions": "Is \"{word}\" in this sentence a denominal verb: a verb that is basically a noun put to work as a verb (a thing-word turned into an action, like \"bottle the wine\", \"mirror a trend\", \"cushion a fall\", \"mask a problem\", \"pool resources\", \"stage changes\", \"footnote it\")? Ordinary verbs that happen to share a form with a noun but are primarily verbs (need, plan, study, help, work) do not count.",
+      "criteria": {
+        "true": "yes: a noun put to work as a verb",
+        "false": "no: a primarily verbal word"
+      }
+    },
+    "inanimate": {
+      "instructions": "In this sentence the subject \"{subj}\" does the action \"{word}\". Is the subject a thing, idea or object (not a person, animal or group of people) while \"{word}\" is a verb that normally needs a living, thinking subject (like promise, hope, forget, expect, ask, bite, swallow, misunderstand)?",
+      "criteria": {
+        "true": "yes: a lifeless subject doing something only a living being normally does",
+        "false": "no: the verb is normal for this kind of subject, or the subject is a person or group"
+      }
+    }
+  },
+  "v2": {
+    "note": "definitional wording (user's suggestion): the categories themselves, no example lists",
+    "denominal": {
+      "instructions": "Verb: \"{word}\". Is this verb in this sentence a denominal verb, that is, a noun used as a verb?",
+      "criteria": {
+        "true": "yes: a noun used as a verb",
+        "false": "no: not a noun used as a verb"
+      }
+    },
+    "inanimate": {
+      "instructions": "Subject: \"{subj}\". Verb: \"{word}\". In this sentence, is the subject inanimate (not a person, animal or group of people) while the verb is one that normally requires an animate subject?",
+      "criteria": {
+        "true": "yes: an inanimate subject with a verb that normally requires an animate subject",
+        "false": "no: the subject is animate, or the verb is normal with an inanimate subject"
+      }
+    }
+  },
+  "v3": {
+    "note": "v2 + the distinctions the Qwen3.5-4B explanations showed were missing: causal/enabling verbs are normal with inanimate subjects; denominal = meaning built from the thing",
+    "denominal": {
+      "instructions": "Verb: \"{word}\". Is this a denominal verb, that is, a verb whose meaning is built from a noun naming a thing (to do something with, to, or like that thing, as in putting something in a bottle = to bottle it)? A verb that is simply an ordinary action word in everyday English, even if a noun with the same form exists, is not denominal.",
+      "criteria": {
+        "true": "yes: the verb's meaning is built from a noun naming a thing",
+        "false": "no: an ordinary action verb, not built from a noun"
+      }
+    },
+    "inanimate": {
+      "instructions": "Subject: \"{subj}\". Verb: \"{word}\". Is the subject inanimate (not a person, animal or group of people) while the verb needs an animate subject: a verb whose meaning requires a mind or a living body (intending, wanting, believing, speaking, feeling, perceiving, eating)? Verbs that describe a thing causing, enabling, requiring, containing, providing or showing something are normal with inanimate subjects and do not count.",
+      "criteria": {
+        "true": "yes: an inanimate subject given a mind or a living body by the verb",
+        "false": "no: the subject is animate, or the verb is normal with an inanimate subject"
+      }
+    }
+  }
+}

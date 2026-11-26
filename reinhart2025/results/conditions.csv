@@ -1,0 +1,10 @@
+a,b,docs,features_sig,max_abs_d,mean_abs_d_vs_human_a,mean_abs_d_vs_human_b,top_shifts
+claude-haiku-5-5@minimal,claude-haiku-5-5@default,813,12,0.45,0.185,0.174,mean_word_length -0.45; adj_attr -0.27; be_main_verb +0.25; type_token -0.23; nominalizations -0.20; present_tense +0.18
+claude-sonnet-5-5@minimal,claude-sonnet-5-5@default,897,0,0.08,0.138,0.144,
+claude-opus-5-5@minimal,claude-opus-5-5@default,854,1,0.24,0.12,0.126,mean_word_length -0.24
+anthropic__claude-haiku-5.5,claude-haiku-5-5@minimal,803,14,0.41,0.208,0.185,other_nouns +0.41; demonstratives -0.23; present_tense +0.22; clausal_coordination -0.21; infinitives -0.21; existential_there -0.21
+z-ai__glm-5.3-flash,nanogpt_z-ai__glm-5.3-flash-uncensored,895,1,0.11,0.136,0.134,type_token +0.11
+deepseek__deepseek-v4.1-flash,nanogpt_deepseek__deepseek-v4.1-flash-uncensored,895,11,0.36,0.135,0.153,first_person_pronouns -0.36; neg_analytic -0.35; verb_private -0.23; infinitives -0.20; adverbs -0.19; other_nouns +0.17
+google__gemma-4-31b-it,nanogpt_Gemma-4-31B-Gembrain-uncensored-heretic,898,18,0.32,0.267,0.23,prepositions -0.32; nominalizations -0.25; clausal_coordination +0.23; be_main_verb +0.23; third_person_pronouns +0.21; adj_pred +0.19
+nanogpt_qwen__qwen3.8-27b,nanogpt_qwen__qwen3.8-27b-antislop,895,51,0.9,0.227,0.339,prepositions +0.90; infinitives +0.89; neg_analytic -0.81; perfect_aspect +0.75; be_main_verb -0.70; present_tense -0.60
+nanogpt_qwen__qwen3.8-27b,ollama_richardyoung__hemmingway-1_Q4_K_M,893,41,0.61,0.227,0.143,that_subj -0.61; adj_attr -0.58; perfect_aspect +0.55; present_participle -0.53; indefinite_pronouns +0.51; nominalizations -0.49

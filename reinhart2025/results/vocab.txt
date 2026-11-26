@@ -1,0 +1,71 @@
+anthropic__claude-haiku-5.5: 899 docs, dropping 35 refusals + 0 short; stripped 80 notes
+baidu__ernie-5.5-flash-preview_free@nocount: 889 docs, dropping 6 refusals + 1 short; stripped 1 notes
+claude-haiku-5-5@default: 900 docs, dropping 50 refusals + 1 short; stripped 396 notes
+claude-haiku-5-5@minimal: 899 docs, dropping 67 refusals + 8 short; stripped 708 notes
+claude-opus-5-5@default: 900 docs, dropping 36 refusals + 0 short; stripped 14 notes
+claude-opus-5-5@minimal: 900 docs, dropping 18 refusals + 0 short; stripped 6 notes
+claude-sonnet-5-5@default: 900 docs, dropping 3 refusals + 0 short; stripped 2 notes
+claude-sonnet-5-5@minimal: 900 docs, dropping 0 refusals + 0 short; stripped 3 notes
+deepseek__deepseek-v4-flash-0731: 900 docs, dropping 9 refusals + 0 short; stripped 0 notes
+deepseek__deepseek-v4-flash: 900 docs, dropping 6 refusals + 1 short; stripped 1 notes
+deepseek__deepseek-v4.1-flash-1017: 900 docs, dropping 5 refusals + 0 short; stripped 0 notes
+deepseek__deepseek-v4.1-flash: 899 docs, dropping 3 refusals + 0 short; stripped 1 notes
+google__gemini-3.8-flash_floor: 899 docs, dropping 175 refusals + 1 short; stripped 0 notes
+google__gemma-4-31b-it: 900 docs, dropping 2 refusals + 0 short; stripped 0 notes
+minimax__minimax-m3.1-flash@nocount: 900 docs, dropping 3 refusals + 3 short; stripped 0 notes
+mistralai__mistral-small-3.1-24b-instruct: 900 docs, dropping 1 refusals + 7 short; stripped 0 notes
+nanogpt_Gemma-4-31B-Gembrain-uncensored-heretic: 900 docs, dropping 0 refusals + 0 short; stripped 0 notes
+nanogpt_deepseek__deepseek-v4.1-flash-uncensored: 900 docs, dropping 2 refusals + 0 short; stripped 2 notes
+nanogpt_qwen__qwen3.8-27b-antislop: 900 docs, dropping 4 refusals + 0 short; stripped 0 notes
+nanogpt_qwen__qwen3.8-27b: 900 docs, dropping 1 refusals + 0 short; stripped 0 notes
+nanogpt_z-ai__glm-5.3-flash-uncensored: 900 docs, dropping 0 refusals + 1 short; stripped 0 notes
+nvidia__nemotron-3-ultra-550b-a55b_free: 900 docs, dropping 0 refusals + 0 short; stripped 0 notes
+nvidia__nemotron-3.5-lightning: 900 docs, dropping 3 refusals + 4 short; stripped 0 notes
+nvidia__nemotron-3.5-super-vl: 900 docs, dropping 2 refusals + 0 short; stripped 1 notes
+ollama_richardyoung__hemmingway-1_Q4_K_M: 900 docs, dropping 5 refusals + 1 short; stripped 0 notes
+openai__gpt-6-luna: 900 docs, dropping 93 refusals + 115 short; stripped 155 notes
+qwen__qwen3.8-flash: 900 docs, dropping 1 refusals + 1 short; stripped 0 notes
+tencent__hy3: 900 docs, dropping 0 refusals + 1 short; stripped 1 notes
+tencent__hy4-flash: 900 docs, dropping 2 refusals + 1 short; stripped 3 notes
+tencent__hy4: 900 docs, dropping 5 refusals + 2 short; stripped 24 notes
+upstage__solar-mini4: 900 docs, dropping 1 refusals + 5 short; stripped 5 notes
+xiaomi__mimo-v2.6-flash: 900 docs, dropping 6 refusals + 3 short; stripped 1 notes
+xiaomi__mimo-v2.6-pro: 900 docs, dropping 2 refusals + 0 short; stripped 0 notes
+z-ai__glm-5.3-flash: 899 docs, dropping 3 refusals + 0 short; stripped 2 notes
+gpt-4o-2024-08-06                          shared 30%, journey 30%, challenges 23%, amidst 22%, shadows 20%, tapestry 19%, beneath 19%, resilience 19%
+gpt-4o-mini-2024-07-18                     laughter 33%, merely 27%, shadows 27%, shared 27%, moments 26%, chaos 24%, deeper 24%, spirit 24%
+llama-3-70B-Instruct                       excitement 13%, secrets 8%, reminder 7%, whisper 6%, hint 6%, testament 6%, glow 6%, shining 5%
+llama-3-8B-Instruct                        challenges 14%, excitement 12%, nodded 11%, reminder 10%, racing 9%, mixture 8%, whisper 7%, glow 7%
+anthropic__claude-haiku-5.5                somewhere 27%, quietly 16%, faint 10%, folded 9%, carries 7%, rhythm 6%, broader 5%, uncertain 5%
+baidu__ernie-5.5-flash-preview_free@nocount genuinely 7%, genuine 5%, folded 4%, carries 4%, ernie 3%
+claude-haiku-5-5@default                   nobody 40%, passage 27%, text 21%, necessarily 20%, continuation 15%, folded 6%, citations 5%, carries 5%
+claude-haiku-5-5@minimal                   nobody 37%, text 13%, rarely 9%, folded 8%, continuation 5%, carries 5%, considerations 4%, fade 4%
+claude-opus-5-5@default                    continuation 6%, screenplay 4%, folded 4%, quotes 2%, copyrighted 2%
+claude-sonnet-5-5@default                  nobody 30%, folded 4%, porch 3%, sleeve 3%
+claude-sonnet-5-5@minimal                  nobody 33%, folded 4%, genuine 2%, damp 2%, sleeve 2%
+deepseek__deepseek-v4-flash-0731           merely 24%, profound 12%, distant 11%, hum 10%, whisper 8%, hollow 8%, deliberate 7%, flicker 7%
+deepseek__deepseek-v4-flash                merely 16%, whisper 8%, hollow 8%, diction 5%, damp 5%, smelled 4%, scent 4%, stillness 4%
+deepseek__deepseek-v4.1-flash-1017         genuine 4%, folded 3%, blur 3%, conversations 3%, boundaries 3%, shapes 2%, hollow 2%, reminder 2%
+deepseek__deepseek-v4.1-flash              merely 13%, interplay 3%, reminder 3%, trusted 2%, genuine 2%, underscores 2%
+google__gemini-3.8-flash_floor             entirely 18%, consequently 17%, absolute 16%, merely 14%, frequently 12%, text 10%, thereby 9%, profound 9%
+google__gemma-4-31b-it                     merely 27%, remains 21%, sudden 21%, transition 18%, rhythmic 13%, precision 13%, shifted 13%, profound 12%
+minimax__minimax-m3.1-flash@nocount        arrangement 3%, smelled 2%
+mistralai__mistral-small-3.1-24b-instruct  challenges 25%, crucial 24%, filled 22%, mix 21%, testament 17%, reminder 16%, nodded 15%, stark 14%
+nanogpt_Gemma-4-31B-Gembrain-uncensored-heretic merely 22%, distant 12%, profound 10%, ghost 10%, thereby 9%, precision 9%, tension 9%, scent 9%
+nanogpt_deepseek__deepseek-v4.1-flash-uncensored genuine 4%, folded 4%, carries 4%, messy 3%, conversations 3%, smelled 2%, boundaries 2%, regulatory 2%
+nanogpt_qwen__qwen3.8-27b-antislop         remains 35%, challenges 24%, continues 21%, prospect 18%, reminder 18%, broader 17%, serve 16%, merely 16%
+nanogpt_qwen__qwen3.8-27b                  silence 40%, merely 28%, profound 15%, narrative 13%, distant 11%, thereby 11%, rhythm 11%, precision 11%
+nanogpt_z-ai__glm-5.3-flash-uncensored     genuine 3%, arguing 3%
+nvidia__nemotron-3-ultra-550b-a55b_free    sharp 28%, merely 18%, rhythm 12%, precision 11%, jaw 10%, deliberate 10%, knuckles 9%, scent 9%
+nvidia__nemotron-3.5-lightning             merely 45%, profound 33%, landscape 27%, narrative 26%, stark 25%, serves 24%, testament 23%, relentless 18%
+nvidia__nemotron-3.5-super-vl              merely 19%, distant 14%, scent 11%, precision 10%, smelled 7%, tension 7%, boundaries 6%, damp 6%
+ollama_richardyoung__hemmingway-1_Q4_K_M   genuinely 6%, genuine 4%, arguing 2%, boundaries 2%, conversations 2%
+openai__gpt-6-luna                         beneath 19%, necessarily 19%, distinguish 13%, text 12%, establish 12%, distinction 12%, alter 10%, uncertain 6%
+qwen__qwen3.8-flash                        merely 29%, remains 28%, chaos 17%, distant 14%, profound 13%, precision 12%, narrative 12%, scent 11%
+tencent__hy3                               merely 12%, borrowed 4%, folded 4%, regimes 3%, ledger 3%, humming 3%, protocols 3%, uncertain 2%
+tencent__hy4-flash                         merely 27%, quietly 20%, folded 11%, damp 8%, rhythm 8%, stubborn 7%, genuine 7%, arrives 7%
+tencent__hy4                               merely 25%, folded 24%, quietly 22%, precisely 22%, faint 14%, damp 11%, tidy 11%, carries 10%
+upstage__solar-mini4                       quiet 37%, merely 19%, narrative 12%, tension 12%, distant 11%, rhythm 11%, broader 10%, reminder 9%
+xiaomi__mimo-v2.6-flash                    merely 17%, profound 11%, narrative 6%, testament 5%, inherent 5%, reminder 4%, scent 4%, whisper 4%
+xiaomi__mimo-v2.6-pro                      merely 17%, profound 14%, narrative 9%, tension 7%, chaotic 6%, tragedy 6%, logic 6%, rigorous 5%
+z-ai__glm-5.3-flash                        genuine 4%, conversations 3%

@@ -1,0 +1,36 @@
+<div class="home-page">
+  <header style="display:grid; gap: var(--cds-gap-sm)">
+    <h1>How AI-written text differs from human writing: two replications</h1>
+    <p>We reran two recent studies of the language models write, with the authors' prompts and measures rebuilt from their papers,
+      and then extended both to current models: the most used models on OpenRouter, Claude, and community finetunes that promise
+      more human-sounding prose. Everything here, from the generated text to the analysis code, is published so the results can be checked and rerun.</p>
+  </header>
+
+  <div class="cards">
+    <a class="card" href="reinhart2025/">
+      <h2>Do LLMs write like humans?</h2>
+      <span class="cite">Reinhart, Markey, Laudenbach, Pantusen, Yurko, Weinberg &amp; Brown (2025), arXiv 2410.16107</span>
+      <p>Models continue 900 human texts in the same style; 67 Biber features measure how far each continuation drifts from the human one.
+        The paper's effect sizes reproduce (r = 0.99 over 396 feature × model pairs). Every current model is still easy to tell from human
+        writing, yet all of them sit closer to it than GPT-4o did, a few only slightly.</p>
+      <span class="go">Open the report →</span>
+    </a>
+    <a class="card" href="clark2026/">
+      <h2>Why is AI-generated language so hard to understand?</h2>
+      <span class="cite">Clark, Martin &amp; Mahowald (2026), arXiv 2610.29162</span>
+      <p>Eight features tied to reading difficulty, from reduced relative clauses to never-seen word pairs, measured in essays, chat and
+        agentic coding sessions against student essays, film subtitles and StackExchange. Our models land on the same side of the human
+        line as the paper's in 26 of 32 essay checks, 12 of 16 chat checks and 10 of 12 coding checks.</p>
+      <span class="go">Open the report →</span>
+    </a>
+  </div>
+
+  <section style="display:grid; gap: var(--cds-gap-sm)">
+    <h2 style="font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0">Reproduce it</h2>
+    <ul>
+      <li>The repository holds all code, the result tables behind both reports, and a step-by-step guide that a person or a coding agent can follow.</li>
+      <li>Every model output (continuations, essays, chats, coding transcripts) is attached to the GitHub release, so the analyses rerun without spending on API calls.</li>
+      <li>Third-party corpora (HAP-E, PERSUADE 2.0, OpenSubtitles, StackExchange, Wikipedia) are fetched by scripts from their original sources.</li>
+    </ul>
+  </section>
+</div>

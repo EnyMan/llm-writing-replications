@@ -1,0 +1,351 @@
+<meta name="dash-one-writer">
+<style>
+  .rpt { --div-pos: #2a78d6; --div-neg: #e34948; --div-mid: #f0efec;
+         font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-xl); max-width: 1100px; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .rpt { --div-pos: #3987e5; --div-neg: #e66767; --div-mid: #383835; } }
+  :root[data-theme="dark"] .rpt { --div-pos: #3987e5; --div-neg: #e66767; --div-mid: #383835; }
+  .rpt h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .rpt h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+  .rpt p { margin: 0; max-width: 72ch; line-height: 1.55; }
+  .rpt .lede { font-size: var(--cds-font-size-body); }
+  .rpt .muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .rpt section { display: grid; gap: var(--cds-gap-md); min-width: 0; }
+  .rpt .num { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
+  .rpt .chart { position: relative; min-height: 280px; min-width: 0; }
+  .rpt .chart.tall { min-height: 560px; }
+  .rpt .scroll { overflow-x: auto; }
+  .rpt svg text { font-family: var(--font-anthropic-sans); }
+  .rpt .axis text, .rpt .tick-label { fill: var(--cds-text-secondary); font-size: 11px; }
+  .rpt .axis path, .rpt .axis line { stroke: var(--cds-chart-axis); }
+  .rpt .grid line { stroke: var(--cds-chart-grid); }
+  .rpt .row-label { fill: var(--color-fg); font-size: 12px; }
+  .rpt .val-label { fill: var(--color-fg-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .rpt .legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .rpt .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .rpt .legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .rpt .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border);
+              box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 8px; font-size: 12px; line-height: 1.4;
+              color: var(--color-fg); max-width: 260px; z-index: 5; }
+  .rpt .tip .muted { color: var(--cds-text-secondary); }
+  .rpt table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); }
+  .rpt th, .rpt td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .rpt th { color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+  .rpt .scale { display: flex; align-items: center; gap: 8px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); flex-wrap: wrap; }
+  .rpt .scale .bar { width: 180px; height: 10px; border-radius: 2px;
+                     background: linear-gradient(90deg, var(--div-neg), var(--div-mid), var(--div-pos)); }
+  .rpt .pending { border: 1px solid var(--color-border-line); background: var(--color-panel); border-radius: var(--cds-radius);
+                  padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); }
+  .rpt .pending ul, .rpt details ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; max-width: 72ch; line-height: 1.5; }
+  .rpt details summary { cursor: pointer; font-weight: var(--cds-font-weight-medium); }
+  .rpt details[open] { display: grid; gap: var(--cds-gap-sm); }
+</style>
+
+<div class="rpt">
+  <header id="top" style="display:grid; gap: var(--cds-gap-sm)">
+    <h1>Do LLMs write like humans? A replication, and 25 models later</h1>
+    <p class="lede" data-read lang="en">
+      We reran Reinhart et al. (2025) on 900 human texts from the HAP-E corpus and reproduced the paper's effect sizes
+      (r = <span class="num" data-draw="rep-r" data-source="rep_stats" data-field="r" data-row="0">—</span> over
+      <span class="num" data-draw="rep-n" data-source="rep_stats" data-field="pairs" data-row="0">—</span> feature × model pairs).
+      Then we gave the same prompt to <span class="num" data-draw="n-new" data-source="summary" data-field="models_2026" data-row="0">—</span>
+      current models: OpenRouter's most used, Claude through Claude Code, and community finetunes that promise more human prose. All of them are still easy to tell from human writing
+      (a classifier separates even the closest one <span class="num" data-draw="min-acc" data-source="summary" data-field="min_rf_acc" data-row="0">—</span>% of the time),
+      but the average stylistic gap is smaller than GPT-4o's: mean |d| of
+      <span class="num" data-draw="best-d" data-source="summary" data-field="best_d" data-row="0">—</span> for
+      <span class="num" data-draw="best-label" data-source="summary" data-field="best_label" data-row="0">—</span>, against
+      <span class="num" data-draw="gpt4o-d" data-source="summary" data-field="gpt4o_d" data-row="0">—</span> for GPT-4o.
+    </p>
+  </header>
+
+  <section id="replication">
+    <h2>Our numbers land on the paper's</h2>
+    <p data-read lang="en">Each dot is one Biber feature for one of the paper's six models: the paired Cohen's d the paper reports (Table S6) against the one we measured on our 900-document subset with pybiber. Dots on the diagonal agree exactly.</p>
+    <div class="chart" id="rep-chart" data-draw="rep-scatter" data-source="replication"></div>
+    <p class="muted">Cohen's d is the mean paired difference (model − human continuation of the same text) divided by its standard deviation. 0.2 is small, 0.5 medium, 0.8 large.</p>
+  </section>
+
+  <section id="distance">
+    <h2>How far each model's style sits from human writing</h2>
+    <p data-read lang="en">Mean |d| averages the absolute effect size over all 67 features: lower means a model's grammar and rhetoric look more like the human continuation. The figure at the right is how often a random forest tells that model's text from human text on held-out documents (50% would be a coin toss).</p>
+    <div class="legend" data-draw="group-legend" data-source="models"></div>
+    <div class="chart tall" id="distance-chart" data-draw="distance" data-source="models"></div>
+  </section>
+
+  <section id="features">
+    <h2>The paper's signature features, model by model</h2>
+    <p data-read lang="en">Rate of each feature relative to human usage (1× = human), for the 15 features the paper's classifier found most important. Blue cells use a feature more than humans do, red cells less. Rows follow the ranking above.</p>
+    <div class="scale"><span>¼× or less</span><span class="bar"></span><span>4× or more</span><span>· cells without a dot are not significant (Wilcoxon, Bonferroni)</span></div>
+    <div class="scroll"><div class="chart tall" id="heatmap" data-draw="heatmap" data-source="features models"></div></div>
+  </section>
+
+  <section id="pairs">
+    <h2>What a finetune or a system prompt changes</h2>
+    <p data-read lang="en">Each row compares two versions of the same model on the same documents: a community finetune against the model it was trained from, Claude with Claude Code's default system prompt against a minimal one, and Haiku through the API against Haiku through Claude Code. The arrow runs from the first to the second; left is closer to human. Hemmingway-1 roughly halves its parent's distance from human writing, while the Antislop finetune of the same parent moves further away.</p>
+    <div class="legend"><span><i style="background: var(--cds-chart-muted)"></i>first version</span><span><i data-draw="pairs-swatch"></i>second version</span></div>
+    <div class="chart" id="pairs-chart" data-draw="pairs" data-source="pairs"></div>
+    <p class="muted">Features changed counts the Biber features whose paired difference is significant after Bonferroni correction (Wilcoxon). The Haiku route comparison is confounded: Haiku thinks about 5,000 tokens per text through Claude Code but ran with reasoning off through the API.</p>
+  </section>
+
+  <section id="vocabulary">
+    <h2>Words that give a model away</h2>
+    <p data-read lang="en">For each model, words it uses at least 10 times as often as the human texts, ordered by the share of its outputs that contain them. Where GPT-4o leaned on "tapestry" and "amidst", many 2026 models lean on "merely", "profound" and "quietly". Some entries ("continuation", "text", "necessarily") are the model talking about the prompt.</p>
+    <div class="scroll">
+      <table data-source="vocab_wide" data-row-key="label">
+        <thead><tr><th data-field="label">Model</th><th data-field="words">Overused words (share of outputs containing the word)</th></tr></thead>
+        <tbody data-draw="vocab-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="pending" class="pending">
+    <h2>Still to come</h2>
+    <ul>
+      <li>Claude Fable 5.2 through Claude Code, in both conditions. Only a 12-text pilot has run so far.</li>
+    </ul>
+  </section>
+
+  <details id="method">
+    <summary>Method and caveats</summary>
+    <ul>
+      <li>Texts: the 900 documents of HAP-E mini (150 each of academic, blog, fiction, news, spoken, TV/movie). Each model got human chunk 1 and the paper's prompt: "In the same style, tone, and diction of the following text, complete the next 500 words, generate exactly 500 words, and note that the text does not necessarily end after the generated words:". It is compared with the real chunk 2.</li>
+      <li>Features: Biber's 67 features from pybiber 0.3.1 with spaCy en_core_web_sm, set to match the paper's pseudobibeR output (plain type-token ratio, lenient "be" as main verb). The paper's six models were re-tagged with the same pipeline rather than taken from the published values.</li>
+      <li>Filtering as in the paper: responses under 100 words are dropped, as are refusals and safety-filter errors. GPT-6 Luna refused or cut short 23% of prompts, mostly TV scripts and news it judged copyrighted; Claude Haiku refused 6-7% and Opus 2-4%; most other models lost under 1%.</li>
+      <li>A last paragraph that only talks about the prompt ("*Note: this continuation is exactly 500 words…*") is removed before tagging, for every model. Claude Haiku through Claude Code added one to 79% of its outputs.</li>
+      <li>Providers: OpenRouter for most models, NanoGPT for the uncensored, Gembrain and Antislop finetunes and their Qwen 3.8 27B parent, Ollama on a local RTX 4090 for Hemmingway-1 (Q4_K_M), and Claude Code (<code>claude -p</code>) on a subscription for Haiku, Sonnet and Opus 5.5. Claude ran at low effort; Sonnet and Opus barely think, Haiku still thinks about 5,000 tokens per text.</li>
+      <li>Classifiers: 75/25 train/test split by document, stratified by genre; random forest with 500 trees; lasso logistic regression with 10-fold CV.</li>
+      <li>Reasoning was turned off where a model allows it. MiniMax and ERNIE reason regardless and, told to write "exactly 500 words", counted words until they ran out of tokens; they got one extra sentence ("Do not count the words; an approximate length of about 500 words is fine."). A paired test on two other models found no feature that this sentence changes (0 of 67 after Bonferroni).</li>
+      <li>Not lemmatized: vocabulary counts use lowercased word forms, and curly and straight apostrophes are treated as the same character. Many 2026 models write typographic apostrophes (it’s) where the human texts use straight ones.</li>
+      <li>API generation cost about $15.80 across 27 models on OpenRouter and NanoGPT, pilots included. Claude through Claude Code ran on a subscription, and Hemmingway-1 ran locally.</li>
+    </ul>
+  </details>
+</div>
+
+<script>
+window.RPT = (() => {
+  const GROUPS = ['2024 base model', '2024 instruction-tuned', '2026 general model',
+                  'Claude via claude -p (minimal)', 'Claude via claude -p (default)', '2026 community finetune'];
+  const color = (g) => dash.colors[Math.max(0, GROUPS.indexOf(g))];
+  const fmt2 = d3.format('.2f');
+  function tip(el) {
+    const t = document.createElement('div'); t.className = 'tip'; t.hidden = true; el.appendChild(t);
+    return {
+      show(ev, html) {
+        t.replaceChildren(); html.forEach(([text, muted]) => { const d = document.createElement('div'); d.textContent = text; if (muted) d.className = 'muted'; t.appendChild(d); });
+        t.hidden = false; const r = el.getBoundingClientRect(); let x = ev.clientX - r.left + 12, y = ev.clientY - r.top + 12;
+        if (x + t.offsetWidth > el.clientWidth) x = Math.max(0, ev.clientX - r.left - t.offsetWidth - 12);
+        t.style.left = x + 'px'; t.style.top = y + 'px';
+      },
+      hide() { t.hidden = true; }
+    };
+  }
+  function failed(el, src) {
+    const s = dash.data(src).status;
+    if (s === 'ok') return false;
+    el.replaceChildren(); el.textContent = s === 'error' ? 'This chart could not load its data.' : '—';
+    return true;
+  }
+  return { GROUPS, color, fmt2, tip, failed };
+})();
+
+dash.calc('rep_stats', {
+  inputs: ['replication'], title: 'Replication fit',
+  description: "Pearson correlation between the paper's paired Cohen's d (Table S6) and ours, over every feature × model pair.",
+  fn: (replication) => {
+    const x = replication.map((r) => +r.d_paper), y = replication.map((r) => +r.d_ours), n = x.length;
+    const mx = x.reduce((a, b) => a + b, 0) / n, my = y.reduce((a, b) => a + b, 0) / n;
+    let sxy = 0, sxx = 0, syy = 0;
+    for (let i = 0; i < n; i++) { sxy += (x[i] - mx) * (y[i] - my); sxx += (x[i] - mx) ** 2; syy += (y[i] - my) ** 2; }
+    return [{ r: Math.round(1000 * sxy / Math.sqrt(sxx * syy)) / 1000, pairs: n }];
+  }
+});
+
+dash.calc('summary', {
+  inputs: ['models'], title: 'Headline comparison',
+  description: 'Count of 2026 models, the lowest human-vs-model classifier accuracy among them, and the closest 2026 model by mean |d| next to GPT-4o.',
+  fn: (models) => {
+    const now = models.filter((r) => !r.group.startsWith('2024'));
+    const best = now.reduce((a, b) => (+b.mean_abs_d < +a.mean_abs_d ? b : a));
+    const gpt4o = models.find((r) => r.model === 'gpt-4o-2024-08-06');
+    return [{ models_2026: now.length, min_rf_acc: Math.min(...now.map((r) => +r.rf_acc)),
+              best_label: best.label, best_d: Math.round(100 * +best.mean_abs_d) / 100,
+              gpt4o_d: Math.round(100 * +gpt4o.mean_abs_d) / 100 }];
+  }
+});
+
+dash.calc('vocab_wide', {
+  inputs: ['vocab', 'models'], title: 'Overused words by model',
+  description: 'The top overused words per model joined into one line, in the order of the distance chart.',
+  fn: (vocab, models) => models.filter((m) => vocab.some((v) => v.label === m.label)).map((m) => ({
+    label: m.label,
+    words: vocab.filter((v) => v.label === m.label).map((v) => `${v.word} ${Math.round(+v.doc_pct)}%`).join(' · ')
+  }))
+});
+
+for (const [name, src, field, f] of [['rep-r', 'rep_stats', 'r', (v) => v.toFixed(3)], ['rep-n', 'rep_stats', 'pairs', String],
+  ['n-new', 'summary', 'models_2026', String], ['min-acc', 'summary', 'min_rf_acc', (v) => v.toFixed(1)],
+  ['best-d', 'summary', 'best_d', (v) => v.toFixed(2)], ['best-label', 'summary', 'best_label', String],
+  ['gpt4o-d', 'summary', 'gpt4o_d', (v) => v.toFixed(2)]]) {
+  dash.draw(name, (el) => {
+    const d = dash.data(src);
+    el.textContent = d.status === 'ok' && d.data && d.data[0] ? f(d.data[0][field]) : '—';
+  });
+}
+
+dash.draw('group-legend', (el) => {
+  const d = dash.data('models'); el.replaceChildren();
+  if (d.status !== 'ok') { el.textContent = '—'; return; }
+  const present = RPT.GROUPS.filter((g) => d.data.some((r) => r.group === g));
+  for (const g of present) {
+    const s = document.createElement('span'), i = document.createElement('i');
+    i.style.background = RPT.color(g); s.append(i, document.createTextNode(g)); el.appendChild(s);
+  }
+});
+
+dash.draw('rep-scatter', (el) => {
+  if (RPT.failed(el, 'replication')) return;
+  const rows = dash.data('replication').data.map((r) => ({ ...r, x: +r.d_paper, y: +r.d_ours }));
+  el.replaceChildren();
+  const W = el.clientWidth, H = Math.min(420, Math.max(280, W * 0.6)), m = { t: 12, r: 16, b: 40, l: 48 };
+  const lim = Math.ceil(10 * d3.max(rows, (r) => Math.max(Math.abs(r.x), Math.abs(r.y)))) / 10;
+  const x = d3.scaleLinear([-lim, lim], [m.l, W - m.r]), y = d3.scaleLinear([-lim, lim], [H - m.b, m.t]);
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('role', 'img').attr('aria-label', "Scatter plot of the paper's effect sizes against ours; points lie along the diagonal.");
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6).tickSize(-(H - m.t - m.b)).tickFormat('')).call((g) => g.select('.domain').remove());
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6));
+  svg.append('line').attr('x1', x(-lim)).attr('y1', y(-lim)).attr('x2', x(lim)).attr('y2', y(lim))
+    .style('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+  svg.append('text').attr('class', 'tick-label').attr('x', (m.l + W - m.r) / 2).attr('y', H - 6).attr('text-anchor', 'middle').text("Paper's d (Table S6)");
+  svg.append('text').attr('class', 'tick-label').attr('transform', `translate(12,${(m.t + H - m.b) / 2}) rotate(-90)`).attr('text-anchor', 'middle').text('Our d');
+  const t = RPT.tip(el);
+  svg.append('g').selectAll('circle').data(rows).join('circle')
+    .attr('cx', (r) => x(r.x)).attr('cy', (r) => y(r.y)).attr('r', 4)
+    .style('fill', dash.colors[0]).style('fill-opacity', 0.7).style('stroke', 'var(--color-bg)').style('stroke-width', 1)
+    .on('pointermove', (ev, r) => t.show(ev, [[`${r.feature_label} · ${r.label}`], [`paper ${RPT.fmt2(r.x)} · ours ${RPT.fmt2(r.y)}`, true]]))
+    .on('pointerleave', () => t.hide());
+});
+
+dash.draw('distance', (el) => {
+  if (RPT.failed(el, 'models')) return;
+  const rows = dash.data('models').data.map((r) => ({ ...r, d: +r.mean_abs_d, acc: +r.rf_acc })).sort((a, b) => a.d - b.d);
+  el.replaceChildren();
+  const W = el.clientWidth, rowH = 22, narrow = W < 520;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('role', 'img')
+    .attr('aria-label', 'Bar chart of mean absolute effect size per model, smallest first.');
+  const probe = svg.append('g');
+  const labelW = d3.max(rows, (r) => probe.append('text').attr('class', 'row-label').text(r.label).node().getComputedTextLength()) + 10;
+  probe.remove();
+  const accW = narrow ? 0 : 74, m = { t: 22, r: accW + 36, b: 8, l: labelW };
+  const H = m.t + rows.length * rowH + m.b;
+  svg.attr('viewBox', `0 0 ${W} ${H}`);
+  const x = d3.scaleLinear([0, Math.max(0.45, d3.max(rows, (r) => r.d))], [m.l, W - m.r]);
+  const y = d3.scaleBand(rows.map((r) => r.model), [m.t, H - m.b]).padding(0.25);
+  svg.append('g').attr('class', 'grid').selectAll('line').data(x.ticks(4)).join('line')
+    .attr('x1', (v) => x(v)).attr('x2', (v) => x(v)).attr('y1', m.t - 4).attr('y2', H - m.b);
+  svg.append('g').selectAll('text').data(x.ticks(4)).join('text').attr('class', 'tick-label')
+    .attr('x', (v) => x(v)).attr('y', m.t - 8).attr('text-anchor', 'middle').text((v) => v.toFixed(1));
+  if (!narrow) svg.append('text').attr('class', 'tick-label').attr('x', W).attr('y', m.t - 8).attr('text-anchor', 'end').text('Classifier acc.');
+  const t = RPT.tip(el);
+  const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (r) => `translate(0,${y(r.model)})`);
+  g.append('text').attr('class', 'row-label').attr('x', m.l - 10).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.label);
+  g.append('rect').attr('x', x(0)).attr('width', (r) => Math.max(1, x(r.d) - x(0))).attr('height', y.bandwidth()).attr('rx', 3)
+    .style('fill', (r) => RPT.color(r.group));
+  g.append('text').attr('class', 'val-label').attr('x', (r) => x(r.d) + 5).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').text((r) => r.d.toFixed(2));
+  if (!narrow) g.append('text').attr('class', 'val-label').attr('x', W).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.acc.toFixed(1) + '%');
+  g.append('rect').attr('x', 0).attr('width', W).attr('height', y.bandwidth()).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [[r.label], [r.group, true],
+      [`mean |d| ${r.d.toFixed(3)} · ${r.features_large_d} of 67 features with |d| > 0.5`, true],
+      [`random forest ${r.acc}% · lasso ${r.lasso_acc}%`, true], [`${r.texts_used} texts used${+r.dropped_pct ? `, ${r.dropped_pct}% dropped` : ''}`, true]]))
+    .on('pointerleave', () => t.hide());
+});
+
+dash.draw('heatmap', (el) => {
+  if (RPT.failed(el, 'features') || RPT.failed(el, 'models')) return;
+  const order = dash.data('models').data.map((r) => ({ model: r.model, label: r.label, group: r.group, d: +r.mean_abs_d })).sort((a, b) => a.d - b.d);
+  const rows = dash.data('features').data;
+  const feats = [...new Map(rows.filter((r) => r.feature !== 'f_43_type_token').map((r) => [r.feature, r])).values()]
+    .sort((a, b) => +a.paper_importance_rank - +b.paper_importance_rank).slice(0, 15);
+  const cell = new Map(rows.map((r) => [r.model + '|' + r.feature, r]));
+  el.replaceChildren();
+  const W = Math.max(el.parentElement.clientWidth, 680);
+  const svg = d3.select(el).append('svg').attr('width', W).attr('role', 'img')
+    .attr('aria-label', 'Heatmap of feature rates relative to human for each model; blue above human, red below.');
+  const probe = svg.append('g');
+  const labelW = d3.max(order, (r) => probe.append('text').attr('class', 'row-label').text(r.label).node().getComputedTextLength()) + 14;
+  probe.remove();
+  const m = { t: 130, r: 8, b: 8, l: labelW }, rowH = 20;
+  const H = m.t + order.length * rowH + m.b;
+  svg.attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+  const x = d3.scaleBand(feats.map((f) => f.feature), [m.l, W - m.r]).padding(0.06);
+  const y = d3.scaleBand(order.map((r) => r.model), [m.t, H - m.b]).padding(0.06);
+  svg.append('g').selectAll('text').data(feats).join('text').attr('class', 'tick-label')
+    .attr('transform', (f) => `translate(${x(f.feature) + x.bandwidth() / 2},${m.t - 6}) rotate(-45)`).text((f) => f.feature_label);
+  svg.append('g').selectAll('text').data(order).join('text').attr('class', 'row-label')
+    .attr('x', m.l - 8).attr('y', (r) => y(r.model) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.label);
+  svg.append('g').selectAll('rect').data(order).join('rect').attr('x', 2).attr('width', 4)
+    .attr('y', (r) => y(r.model)).attr('height', y.bandwidth()).style('fill', (r) => RPT.color(r.group));
+  const t = RPT.tip(el);
+  const cells = [];
+  for (const r of order) for (const f of feats) { const c = cell.get(r.model + '|' + f.feature); if (c) cells.push({ ...c, row: r }); }
+  const g = svg.append('g').selectAll('g').data(cells).join('g')
+    .attr('transform', (c) => `translate(${x(c.feature)},${y(c.model)})`);
+  g.append('rect').attr('width', x.bandwidth()).attr('height', y.bandwidth()).style('fill', 'var(--div-mid)');
+  g.append('rect').attr('width', x.bandwidth()).attr('height', y.bandwidth())
+    .style('fill', (c) => (+c.rate >= 1 ? 'var(--div-pos)' : 'var(--div-neg)'))
+    .style('fill-opacity', (c) => Math.min(1, Math.abs(Math.log2(Math.max(+c.rate, 1e-3))) / 2));
+  g.filter((c) => +c.significant === 1).append('circle').attr('cx', x.bandwidth() - 5).attr('cy', 5).attr('r', 1.6).style('fill', 'var(--color-fg)');
+  if (x.bandwidth() >= 38) g.append('text').attr('x', x.bandwidth() / 2).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'middle')
+    .style('fill', 'var(--color-fg)').style('font-size', '10px').style('font-variant-numeric', 'tabular-nums').text((c) => (+c.rate).toFixed(1) + '×');
+  g.on('pointermove', (ev, c) => t.show(ev, [[`${c.row.label} · ${c.feature_label}`], [`${(+c.rate).toFixed(2)}× human · d = ${(+c.d).toFixed(2)}`, true],
+    [+c.significant === 1 ? 'significant after Bonferroni' : 'not significant', true]])).on('pointerleave', () => t.hide());
+});
+
+dash.draw('pairs-swatch', (el) => { el.style.background = dash.colors[0]; });
+
+dash.draw('pairs', (el) => {
+  if (RPT.failed(el, 'pairs')) return;
+  const rows = dash.data('pairs').data.map((r) => ({ ...r, a: +r.from_d, b: +r.to_d }));
+  el.replaceChildren();
+  const W = el.clientWidth, rowH = 40, narrow = W < 560;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('role', 'img')
+    .attr('aria-label', 'Dumbbell chart of mean absolute effect size before and after a finetune or system prompt change, per model pair.');
+  const probe = svg.append('g');
+  const labelW = Math.min(W * 0.45, d3.max(rows, (r) => Math.max(
+    probe.append('text').attr('class', 'row-label').text(r.to_label).node().getComputedTextLength(),
+    probe.append('text').attr('class', 'tick-label').text('vs ' + r.from_label).node().getComputedTextLength())) + 12);
+  probe.remove();
+  const m = { t: 24, r: narrow ? 12 : 120, b: 8, l: labelW }, H = m.t + rows.length * rowH + m.b;
+  svg.attr('viewBox', `0 0 ${W} ${H}`);
+  const x = d3.scaleLinear([0, Math.max(0.4, d3.max(rows, (r) => Math.max(r.a, r.b)))], [m.l, W - m.r]).nice();
+  const y = d3.scaleBand(rows.map((_, i) => i), [m.t, H - m.b]);
+  svg.append('g').attr('class', 'grid').selectAll('line').data(x.ticks(4)).join('line')
+    .attr('x1', (v) => x(v)).attr('x2', (v) => x(v)).attr('y1', m.t - 4).attr('y2', H - m.b);
+  svg.append('g').selectAll('text').data(x.ticks(4)).join('text').attr('class', 'tick-label')
+    .attr('x', (v) => x(v)).attr('y', m.t - 8).attr('text-anchor', 'middle').text((v) => v.toFixed(1));
+  if (!narrow) svg.append('text').attr('class', 'tick-label').attr('x', W).attr('y', m.t - 8).attr('text-anchor', 'end').text('Features changed');
+  const t = RPT.tip(el);
+  const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (_, i) => `translate(0,${y(i)})`);
+  const mid = y.bandwidth() / 2;
+  g.append('text').attr('class', 'row-label').attr('x', m.l - 12).attr('y', mid - 3).attr('text-anchor', 'end').text((r) => r.to_label);
+  g.append('text').attr('class', 'tick-label').attr('x', m.l - 12).attr('y', mid + 11).attr('text-anchor', 'end').text((r) => 'vs ' + r.from_label);
+  g.append('line').attr('x1', (r) => x(r.a)).attr('x2', (r) => x(r.b)).attr('y1', mid).attr('y2', mid)
+    .style('stroke', 'var(--cds-chart-muted)').style('stroke-width', 2);
+  g.append('circle').attr('cx', (r) => x(r.a)).attr('cy', mid).attr('r', 5).style('fill', 'var(--cds-chart-muted)');
+  g.append('circle').attr('cx', (r) => x(r.b)).attr('cy', mid).attr('r', 6).style('fill', dash.colors[0])
+    .style('stroke', 'var(--color-bg)').style('stroke-width', 2);
+  if (!narrow) g.append('text').attr('class', 'val-label').attr('x', W).attr('y', mid).attr('dy', '0.35em').attr('text-anchor', 'end')
+    .text((r) => `${r.features_sig} of 67`);
+  g.append('rect').attr('width', W).attr('height', y.bandwidth()).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [[`${r.to_label} vs ${r.from_label}`], [r.comparison, true],
+      [`mean |d| vs human ${(+r.from_d).toFixed(3)} → ${(+r.to_d).toFixed(3)}`, true],
+      [`classifier accuracy ${r.from_rf}% → ${r.to_rf}%`, true], [`${r.features_sig} of 67 features changed, largest |d| ${r.max_abs_d}`, true],
+      [r.top_shifts ? 'biggest shifts: ' + r.top_shifts.split('; ').slice(0, 4).join(', ') : '', true]]))
+    .on('pointerleave', () => t.hide());
+});
+
+dash.draw('vocab-rows', (el) => {
+  const d = dash.data('vocab_wide'); el.replaceChildren();
+  if (d.status !== 'ok') { const tr = el.insertRow(), td = tr.insertCell(); td.colSpan = 2; td.textContent = d.status === 'error' ? 'The word lists could not load.' : '—'; return; }
+  for (const r of d.data) { const tr = el.insertRow(); tr.insertCell().textContent = r.label; tr.insertCell().textContent = r.words; }
+});
+</script>

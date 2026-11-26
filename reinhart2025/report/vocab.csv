@@ -1,0 +1,261 @@
+label,word,doc_pct,rate_ratio
+GPT-4o,shared,30.2,13.0
+GPT-4o,journey,29.7,10.4
+GPT-4o,challenges,22.9,14.7
+GPT-4o,amidst,22.2,114.3
+GPT-4o,shadows,19.7,11.1
+GPT-4o,tapestry,19.2,84.5
+GPT-4o,beneath,19.2,12.2
+GPT-4o,resilience,18.7,189.7
+GPT-4o mini,laughter,33.2,48.4
+GPT-4o mini,merely,27.4,23.1
+GPT-4o mini,shadows,27.0,15.2
+GPT-4o mini,shared,26.9,10.3
+GPT-4o mini,moments,26.0,11.2
+GPT-4o mini,chaos,24.3,24.9
+GPT-4o mini,deeper,23.8,18.6
+GPT-4o mini,spirit,23.7,13.1
+Llama 3 70B Instruct,excitement,13.0,18.9
+Llama 3 70B Instruct,secrets,7.6,12.4
+Llama 3 70B Instruct,reminder,6.9,45.8
+Llama 3 70B Instruct,whisper,5.9,16.1
+Llama 3 70B Instruct,hint,5.8,12.7
+Llama 3 70B Instruct,testament,5.7,16.7
+Llama 3 70B Instruct,glow,5.6,11.7
+Llama 3 70B Instruct,shining,5.4,18.8
+Llama 3 8B Instruct,challenges,13.7,11.3
+Llama 3 8B Instruct,excitement,12.4,18.0
+Llama 3 8B Instruct,nodded,10.9,12.4
+Llama 3 8B Instruct,reminder,10.3,63.8
+Llama 3 8B Instruct,racing,9.0,11.7
+Llama 3 8B Instruct,mixture,8.4,10.7
+Llama 3 8B Instruct,whisper,7.2,18.1
+Llama 3 8B Instruct,glow,7.1,14.4
+Claude Haiku 5.5,somewhere,27.4,10.8
+Claude Haiku 5.5,quietly,16.1,11.0
+Claude Haiku 5.5,faint,9.6,14.1
+Claude Haiku 5.5,folded,8.9,28.0
+Claude Haiku 5.5,carries,7.2,21.7
+Claude Haiku 5.5,rhythm,6.5,12.4
+Claude Haiku 5.5,broader,5.4,10.4
+Claude Haiku 5.5,uncertain,4.9,22.1
+ERNIE 5.5 Flash,genuinely,7.4,17.7
+ERNIE 5.5 Flash,genuine,5.0,20.5
+ERNIE 5.5 Flash,folded,4.3,12.8
+ERNIE 5.5 Flash,carries,3.7,10.2
+ERNIE 5.5 Flash,ernie,3.1,44.3
+Claude Haiku 5.5 [default],nobody,39.9,19.7
+Claude Haiku 5.5 [default],passage,27.1,22.5
+Claude Haiku 5.5 [default],text,21.1,20.7
+Claude Haiku 5.5 [default],necessarily,19.9,11.4
+Claude Haiku 5.5 [default],continuation,14.6,131.5
+Claude Haiku 5.5 [default],folded,6.5,20.1
+Claude Haiku 5.5 [default],citations,5.2,54.2
+Claude Haiku 5.5 [default],carries,4.8,14.4
+Claude Haiku 5.5 [minimal],nobody,37.3,17.2
+Claude Haiku 5.5 [minimal],text,13.1,12.5
+Claude Haiku 5.5 [minimal],rarely,9.2,10.3
+Claude Haiku 5.5 [minimal],folded,7.5,25.1
+Claude Haiku 5.5 [minimal],continuation,5.0,43.9
+Claude Haiku 5.5 [minimal],carries,4.9,14.3
+Claude Haiku 5.5 [minimal],considerations,4.2,10.2
+Claude Haiku 5.5 [minimal],fade,3.6,11.5
+Claude Opus 5.5 [default],continuation,5.9,49.9
+Claude Opus 5.5 [default],screenplay,4.1,18.0
+Claude Opus 5.5 [default],folded,3.7,10.5
+Claude Opus 5.5 [default],quotes,2.2,21.3
+Claude Opus 5.5 [default],copyrighted,2.2,18.5
+Claude Sonnet 5.5 [default],nobody,29.5,12.0
+Claude Sonnet 5.5 [default],folded,4.0,11.6
+Claude Sonnet 5.5 [default],porch,3.2,10.4
+Claude Sonnet 5.5 [default],sleeve,2.7,25.4
+Claude Sonnet 5.5 [minimal],nobody,32.9,13.1
+Claude Sonnet 5.5 [minimal],folded,3.7,12.0
+Claude Sonnet 5.5 [minimal],genuine,2.3,10.9
+Claude Sonnet 5.5 [minimal],damp,2.2,10.4
+Claude Sonnet 5.5 [minimal],sleeve,2.2,20.9
+DeepSeek v4 Flash (0731),merely,24.2,18.9
+DeepSeek v4 Flash (0731),profound,12.0,12.8
+DeepSeek v4 Flash (0731),distant,10.7,10.1
+DeepSeek v4 Flash (0731),hum,10.0,12.6
+DeepSeek v4 Flash (0731),whisper,8.3,15.4
+DeepSeek v4 Flash (0731),hollow,8.1,27.5
+DeepSeek v4 Flash (0731),deliberate,7.3,12.7
+DeepSeek v4 Flash (0731),flicker,6.8,12.8
+DeepSeek v4 Flash,merely,15.8,10.8
+DeepSeek v4 Flash,whisper,8.0,13.1
+DeepSeek v4 Flash,hollow,7.5,23.9
+DeepSeek v4 Flash,diction,5.2,15.7
+DeepSeek v4 Flash,damp,4.8,14.7
+DeepSeek v4 Flash,smelled,4.4,28.1
+DeepSeek v4 Flash,scent,4.4,13.7
+DeepSeek v4 Flash,stillness,4.0,14.4
+DeepSeek v4.1 Flash (1017),genuine,4.0,18.5
+DeepSeek v4.1 Flash (1017),folded,3.5,10.8
+DeepSeek v4.1 Flash (1017),blur,2.8,27.5
+DeepSeek v4.1 Flash (1017),conversations,2.6,12.8
+DeepSeek v4.1 Flash (1017),boundaries,2.6,13.8
+DeepSeek v4.1 Flash (1017),shapes,2.3,11.4
+DeepSeek v4.1 Flash (1017),hollow,2.3,10.9
+DeepSeek v4.1 Flash (1017),reminder,2.2,10.4
+DeepSeek v4.1 Flash,merely,12.8,11.6
+DeepSeek v4.1 Flash,interplay,2.7,12.1
+DeepSeek v4.1 Flash,reminder,2.7,11.6
+DeepSeek v4.1 Flash,trusted,2.5,11.1
+DeepSeek v4.1 Flash,genuine,2.3,11.6
+DeepSeek v4.1 Flash,underscores,2.0,17.6
+Gemini 3.8 Flash,entirely,17.6,11.6
+Gemini 3.8 Flash,consequently,17.4,12.5
+Gemini 3.8 Flash,absolute,15.9,11.2
+Gemini 3.8 Flash,merely,13.7,13.6
+Gemini 3.8 Flash,frequently,11.9,10.2
+Gemini 3.8 Flash,text,9.8,15.1
+Gemini 3.8 Flash,thereby,9.0,11.0
+Gemini 3.8 Flash,profound,8.6,12.0
+Gemma 4 31B IT,merely,26.7,27.4
+Gemma 4 31B IT,remains,21.2,10.3
+Gemma 4 31B IT,sudden,20.8,10.8
+Gemma 4 31B IT,transition,18.3,10.6
+Gemma 4 31B IT,rhythmic,13.4,130.7
+Gemma 4 31B IT,precision,12.8,20.8
+Gemma 4 31B IT,shifted,12.7,17.7
+Gemma 4 31B IT,profound,12.4,16.7
+MiniMax M3.1 Flash,arrangement,2.9,10.5
+MiniMax M3.1 Flash,smelled,2.3,16.7
+Mistral Small 3.1 24B,challenges,25.1,16.8
+Mistral Small 3.1 24B,crucial,24.2,25.1
+Mistral Small 3.1 24B,filled,22.0,11.1
+Mistral Small 3.1 24B,mix,20.6,14.0
+Mistral Small 3.1 24B,testament,17.4,47.2
+Mistral Small 3.1 24B,reminder,16.4,83.9
+Mistral Small 3.1 24B,nodded,15.1,15.1
+Mistral Small 3.1 24B,stark,14.5,29.6
+Gemma 4 31B Gembrain (heretic),merely,21.6,22.5
+Gemma 4 31B Gembrain (heretic),distant,11.7,15.2
+Gemma 4 31B Gembrain (heretic),profound,10.2,13.9
+Gemma 4 31B Gembrain (heretic),ghost,10.1,12.1
+Gemma 4 31B Gembrain (heretic),thereby,9.2,10.8
+Gemma 4 31B Gembrain (heretic),precision,9.1,15.0
+Gemma 4 31B Gembrain (heretic),tension,9.1,28.7
+Gemma 4 31B Gembrain (heretic),scent,9.0,43.1
+DeepSeek v4.1 Flash Uncensored,genuine,4.2,21.1
+DeepSeek v4.1 Flash Uncensored,folded,4.1,12.4
+DeepSeek v4.1 Flash Uncensored,carries,3.7,11.4
+DeepSeek v4.1 Flash Uncensored,messy,3.1,10.5
+DeepSeek v4.1 Flash Uncensored,conversations,2.9,15.2
+DeepSeek v4.1 Flash Uncensored,smelled,2.2,20.6
+DeepSeek v4.1 Flash Uncensored,boundaries,2.2,10.8
+DeepSeek v4.1 Flash Uncensored,regulatory,2.2,11.8
+Qwen 3.8 27B Antislop,remains,34.8,16.0
+Qwen 3.8 27B Antislop,challenges,24.4,14.4
+Qwen 3.8 27B Antislop,continues,20.6,11.3
+Qwen 3.8 27B Antislop,prospect,17.7,38.3
+Qwen 3.8 27B Antislop,reminder,17.5,90.1
+Qwen 3.8 27B Antislop,broader,17.0,35.8
+Qwen 3.8 27B Antislop,serve,15.7,10.6
+Qwen 3.8 27B Antislop,merely,15.5,14.4
+Qwen 3.8 27B,silence,39.9,11.6
+Qwen 3.8 27B,merely,28.3,22.3
+Qwen 3.8 27B,profound,15.4,15.8
+Qwen 3.8 27B,narrative,13.1,21.9
+Qwen 3.8 27B,distant,11.0,10.3
+Qwen 3.8 27B,thereby,10.8,10.8
+Qwen 3.8 27B,rhythm,10.8,15.4
+Qwen 3.8 27B,precision,10.8,13.2
+GLM 5.3 Flash Uncensored,genuine,3.1,12.9
+GLM 5.3 Flash Uncensored,arguing,2.7,11.2
+Nemotron 3 Ultra 550B,sharp,28.0,10.5
+Nemotron 3 Ultra 550B,merely,17.6,11.4
+Nemotron 3 Ultra 550B,rhythm,12.2,16.1
+Nemotron 3 Ultra 550B,precision,11.0,12.3
+Nemotron 3 Ultra 550B,jaw,10.3,17.7
+Nemotron 3 Ultra 550B,deliberate,10.0,16.2
+Nemotron 3 Ultra 550B,knuckles,9.2,21.0
+Nemotron 3 Ultra 550B,scent,9.1,30.8
+Nemotron 3.5 Lightning,merely,44.7,29.1
+Nemotron 3.5 Lightning,profound,32.8,29.8
+Nemotron 3.5 Lightning,landscape,27.1,11.8
+Nemotron 3.5 Lightning,narrative,25.8,36.3
+Nemotron 3.5 Lightning,stark,25.2,30.5
+Nemotron 3.5 Lightning,serves,24.4,24.7
+Nemotron 3.5 Lightning,testament,23.0,29.4
+Nemotron 3.5 Lightning,relentless,17.6,31.3
+Nemotron 3.5 Super VL,merely,18.6,13.0
+Nemotron 3.5 Super VL,distant,14.3,13.5
+Nemotron 3.5 Super VL,scent,10.8,42.7
+Nemotron 3.5 Super VL,precision,10.5,12.4
+Nemotron 3.5 Super VL,smelled,7.0,57.6
+Nemotron 3.5 Super VL,tension,6.7,16.8
+Nemotron 3.5 Super VL,boundaries,5.6,22.3
+Nemotron 3.5 Super VL,damp,5.6,20.1
+"Hemmingway-1 (Qwen 3.8 27B, local Q4)",genuinely,6.4,16.0
+"Hemmingway-1 (Qwen 3.8 27B, local Q4)",genuine,4.5,23.5
+"Hemmingway-1 (Qwen 3.8 27B, local Q4)",arguing,2.5,13.0
+"Hemmingway-1 (Qwen 3.8 27B, local Q4)",boundaries,2.3,14.0
+"Hemmingway-1 (Qwen 3.8 27B, local Q4)",conversations,2.0,10.5
+GPT-6 Luna,beneath,18.8,14.4
+GPT-6 Luna,necessarily,18.8,11.3
+GPT-6 Luna,distinguish,12.6,10.4
+GPT-6 Luna,text,12.1,11.5
+GPT-6 Luna,establish,12.0,16.7
+GPT-6 Luna,distinction,11.7,13.3
+GPT-6 Luna,alter,9.7,19.6
+GPT-6 Luna,uncertain,6.1,31.7
+Qwen 3.8 Flash,merely,28.7,22.7
+Qwen 3.8 Flash,remains,27.7,10.6
+Qwen 3.8 Flash,chaos,17.0,14.2
+Qwen 3.8 Flash,distant,14.0,14.2
+Qwen 3.8 Flash,profound,12.7,14.4
+Qwen 3.8 Flash,precision,12.5,17.1
+Qwen 3.8 Flash,narrative,11.8,20.3
+Qwen 3.8 Flash,scent,11.4,46.0
+Hy3,merely,12.5,11.5
+Hy3,borrowed,4.2,10.0
+Hy3,folded,3.9,11.7
+Hy3,regimes,3.0,28.3
+Hy3,ledger,2.8,26.4
+Hy3,humming,2.8,13.2
+Hy3,protocols,2.7,12.2
+Hy3,uncertain,2.4,11.2
+Hy4 Flash,merely,27.0,20.4
+Hy4 Flash,quietly,20.4,11.9
+Hy4 Flash,folded,10.8,27.3
+Hy4 Flash,damp,8.4,30.0
+Hy4 Flash,rhythm,7.8,11.6
+Hy4 Flash,stubborn,7.5,10.4
+Hy4 Flash,genuine,7.2,24.7
+Hy4 Flash,arrives,7.0,10.4
+Hy4,merely,25.0,15.5
+Hy4,folded,24.0,52.4
+Hy4,quietly,22.3,10.5
+Hy4,precisely,21.7,14.9
+Hy4,faint,14.3,12.6
+Hy4,damp,11.1,36.5
+Hy4,tidy,11.0,33.5
+Hy4,carries,9.9,20.2
+Solar Mini 4,quiet,36.7,12.8
+Solar Mini 4,merely,18.8,17.0
+Solar Mini 4,narrative,12.0,23.3
+Solar Mini 4,tension,11.6,35.9
+Solar Mini 4,distant,11.2,12.1
+Solar Mini 4,rhythm,11.1,21.3
+Solar Mini 4,broader,9.6,18.8
+Solar Mini 4,reminder,8.8,41.3
+MiMo v2.6 Flash,merely,16.9,15.4
+MiMo v2.6 Flash,profound,10.9,14.1
+MiMo v2.6 Flash,narrative,6.1,11.8
+MiMo v2.6 Flash,testament,5.3,11.1
+MiMo v2.6 Flash,inherent,4.8,14.5
+MiMo v2.6 Flash,reminder,4.5,20.8
+MiMo v2.6 Flash,scent,4.5,19.9
+MiMo v2.6 Flash,whisper,4.5,10.4
+MiMo v2.6 Pro,merely,16.9,11.6
+MiMo v2.6 Pro,profound,13.9,13.3
+MiMo v2.6 Pro,narrative,8.8,14.0
+MiMo v2.6 Pro,tension,6.9,15.4
+MiMo v2.6 Pro,chaotic,6.2,20.1
+MiMo v2.6 Pro,tragedy,6.0,15.2
+MiMo v2.6 Pro,logic,5.9,11.5
+MiMo v2.6 Pro,rigorous,5.3,14.7
+GLM 5.3 Flash,genuine,4.2,17.4
+GLM 5.3 Flash,conversations,2.6,11.3

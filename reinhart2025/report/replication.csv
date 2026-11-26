@@ -1,0 +1,397 @@
+label,feature_label,d_paper,d_ours
+GPT-4o mini,Present participial clauses,1.37,1.315
+GPT-4o,Present participial clauses,1.38,1.344
+Llama 3 8B Instruct,Present participial clauses,0.44,0.419
+Llama 3 70B Instruct,Present participial clauses,0.56,0.559
+Llama 3 8B (base),Present participial clauses,-0.03,-0.082
+Llama 3 70B (base),Present participial clauses,0.01,-0.016
+GPT-4o mini,‘That’ clauses as subject,1.03,1.133
+GPT-4o,‘That’ clauses as subject,0.77,0.814
+Llama 3 8B Instruct,‘That’ clauses as subject,0.35,0.397
+Llama 3 70B Instruct,‘That’ clauses as subject,0.33,0.346
+Llama 3 8B (base),‘That’ clauses as subject,-0.22,-0.228
+Llama 3 70B (base),‘That’ clauses as subject,-0.2,-0.243
+GPT-4o mini,Mean word length,1.98,1.992
+GPT-4o,Mean word length,2.24,2.28
+Llama 3 8B Instruct,Mean word length,0.14,0.068
+Llama 3 70B Instruct,Mean word length,0.45,0.481
+Llama 3 8B (base),Mean word length,-0.19,-0.165
+Llama 3 70B (base),Mean word length,0.01,0.046
+GPT-4o mini,Adverbs,-0.43,-0.403
+GPT-4o,Adverbs,-0.53,-0.511
+Llama 3 8B Instruct,Adverbs,-0.77,-0.755
+Llama 3 70B Instruct,Adverbs,-0.77,-0.805
+Llama 3 8B (base),Adverbs,0.04,0.034
+Llama 3 70B (base),Adverbs,0.05,0.04
+GPT-4o mini,Nominalizations,1.18,1.214
+GPT-4o,Nominalizations,1.23,1.29
+Llama 3 8B Instruct,Nominalizations,0.49,0.425
+Llama 3 70B Instruct,Nominalizations,0.59,0.615
+Llama 3 8B (base),Nominalizations,-0.15,-0.175
+Llama 3 70B (base),Nominalizations,-0.12,-0.124
+GPT-4o mini,Phrasal co-ordination,0.44,0.465
+GPT-4o,Phrasal co-ordination,0.81,0.798
+Llama 3 8B Instruct,Phrasal co-ordination,0.61,0.602
+Llama 3 70B Instruct,Phrasal co-ordination,0.53,0.525
+Llama 3 8B (base),Phrasal co-ordination,-0.05,-0.114
+Llama 3 70B (base),Phrasal co-ordination,-0.02,-0.055
+GPT-4o mini,Clausal co-ordination,-0.54,-0.507
+GPT-4o,Clausal co-ordination,-0.59,-0.586
+Llama 3 8B Instruct,Clausal co-ordination,0.47,0.549
+Llama 3 70B Instruct,Clausal co-ordination,0.36,0.403
+Llama 3 8B (base),Clausal co-ordination,0.21,0.187
+Llama 3 70B (base),Clausal co-ordination,0.18,0.151
+GPT-4o mini,Other nouns,-0.1,-0.064
+GPT-4o,Other nouns,0.1,0.157
+Llama 3 8B Instruct,Other nouns,-0.38,-0.383
+Llama 3 70B Instruct,Other nouns,-0.24,-0.193
+Llama 3 8B (base),Other nouns,-0.09,-0.249
+Llama 3 70B (base),Other nouns,-0.18,-0.161
+GPT-4o mini,Downtoners,0.33,0.32
+GPT-4o,Downtoners,0.11,0.11
+Llama 3 8B Instruct,Downtoners,-0.26,-0.297
+Llama 3 70B Instruct,Downtoners,-0.29,-0.271
+Llama 3 8B (base),Downtoners,-0.19,-0.261
+Llama 3 70B (base),Downtoners,-0.18,-0.141
+GPT-4o mini,Attributive adjectives,0.91,0.91
+GPT-4o,Attributive adjectives,1.09,1.095
+Llama 3 8B Instruct,Attributive adjectives,-0.01,-0.064
+Llama 3 70B Instruct,Attributive adjectives,0.1,0.137
+Llama 3 8B (base),Attributive adjectives,-0.41,-0.512
+Llama 3 70B (base),Attributive adjectives,-0.37,-0.412
+GPT-4o mini,Demonstratives,0.39,0.34
+GPT-4o,Demonstratives,0.32,0.278
+Llama 3 8B Instruct,Demonstratives,-0.24,-0.251
+Llama 3 70B Instruct,Demonstratives,-0.21,-0.237
+Llama 3 8B (base),Demonstratives,-0.25,-0.28
+Llama 3 70B (base),Demonstratives,-0.21,-0.288
+GPT-4o mini,Agentless passives,-0.59,-0.597
+GPT-4o,Agentless passives,-0.56,-0.58
+Llama 3 8B Instruct,Agentless passives,-0.04,-0.063
+Llama 3 70B Instruct,Agentless passives,-0.13,-0.137
+Llama 3 8B (base),Agentless passives,0.01,-0.005
+Llama 3 70B (base),Agentless passives,-0.02,-0.058
+GPT-4o mini,Past participial postnominal,0.65,0.658
+GPT-4o,Past participial postnominal,0.55,0.587
+Llama 3 8B Instruct,Past participial postnominal,-0.13,-0.078
+Llama 3 70B Instruct,Past participial postnominal,-0.13,-0.017
+Llama 3 8B (base),Past participial postnominal,0.13,0.135
+Llama 3 70B (base),Past participial postnominal,0.14,0.166
+GPT-4o mini,Infinitives,-0.24,-0.28
+GPT-4o,Infinitives,-0.3,-0.288
+Llama 3 8B Instruct,Infinitives,0.51,0.536
+Llama 3 70B Instruct,Infinitives,0.47,0.436
+Llama 3 8B (base),Infinitives,0.22,0.182
+Llama 3 70B (base),Infinitives,0.16,0.154
+GPT-4o mini,Prepositional phrases,0.77,0.839
+GPT-4o,Prepositional phrases,0.68,0.723
+Llama 3 8B Instruct,Prepositional phrases,-0.01,0.089
+Llama 3 70B Instruct,Prepositional phrases,0.02,0.174
+Llama 3 8B (base),Prepositional phrases,-0.46,-0.439
+Llama 3 70B (base),Prepositional phrases,-0.09,-0.312
+GPT-4o mini,Emphatics,-0.31,-0.293
+GPT-4o,Emphatics,-0.39,-0.379
+Llama 3 8B Instruct,Emphatics,-0.03,-0.027
+Llama 3 70B Instruct,Emphatics,-0.02,-0.03
+Llama 3 8B (base),Emphatics,-0.23,-0.278
+Llama 3 70B (base),Emphatics,-0.26,-0.316
+GPT-4o mini,Existential ‘there’,-0.27,-0.225
+GPT-4o,Existential ‘there’,-0.19,-0.113
+Llama 3 8B Instruct,Existential ‘there’,-0.37,-0.314
+Llama 3 70B Instruct,Existential ‘there’,-0.39,-0.361
+Llama 3 8B (base),Existential ‘there’,0.03,0.094
+Llama 3 70B (base),Existential ‘there’,0.05,0.119
+GPT-4o mini,Possibility modals,0.38,0.399
+GPT-4o,Possibility modals,0.04,0.034
+Llama 3 8B Instruct,Possibility modals,0.08,0.124
+Llama 3 70B Instruct,Possibility modals,0.13,0.15
+Llama 3 8B (base),Possibility modals,-0.01,0.024
+Llama 3 70B (base),Possibility modals,-0.01,-0.012
+GPT-4o mini,Past tense,-0.41,-0.377
+GPT-4o,Past tense,-0.29,-0.265
+Llama 3 8B Instruct,Past tense,-0.12,-0.044
+Llama 3 70B Instruct,Past tense,-0.27,-0.247
+Llama 3 8B (base),Past tense,0.19,0.199
+Llama 3 70B (base),Past tense,0.16,0.139
+GPT-4o mini,‘That’ verb complements,-0.23,-0.186
+GPT-4o,‘That’ verb complements,-0.35,-0.369
+Llama 3 8B Instruct,‘That’ verb complements,0.22,0.303
+Llama 3 70B Instruct,‘That’ verb complements,0.08,0.091
+Llama 3 8B (base),‘That’ verb complements,0.26,0.253
+Llama 3 70B (base),‘That’ verb complements,0.22,0.206
+GPT-4o mini,Contractions,-0.49,-0.463
+GPT-4o,Contractions,-0.5,-0.473
+Llama 3 8B Instruct,Contractions,0.35,0.309
+Llama 3 70B Instruct,Contractions,0.38,0.337
+Llama 3 8B (base),Contractions,0.29,0.287
+Llama 3 70B (base),Contractions,0.24,0.221
+GPT-4o mini,Other adverbial subordinators,0.41,0.489
+GPT-4o,Other adverbial subordinators,0.21,0.341
+Llama 3 8B Instruct,Other adverbial subordinators,0.13,0.317
+Llama 3 70B Instruct,Other adverbial subordinators,0.07,0.249
+Llama 3 8B (base),Other adverbial subordinators,-0.18,-0.196
+Llama 3 70B (base),Other adverbial subordinators,-0.11,-0.074
+GPT-4o mini,‘Be’ as main verb,-0.94,-0.815
+GPT-4o,‘Be’ as main verb,-0.83,-0.719
+Llama 3 8B Instruct,‘Be’ as main verb,0.11,0.115
+Llama 3 70B Instruct,‘Be’ as main verb,0.0,-0.021
+Llama 3 8B (base),‘Be’ as main verb,0.09,0.125
+Llama 3 70B (base),‘Be’ as main verb,0.02,0.075
+GPT-4o mini,Public verbs,-0.48,-0.466
+GPT-4o,Public verbs,-0.37,-0.306
+Llama 3 8B Instruct,Public verbs,-0.34,-0.302
+Llama 3 70B Instruct,Public verbs,-0.34,-0.294
+Llama 3 8B (base),Public verbs,0.13,0.141
+Llama 3 70B (base),Public verbs,0.1,0.104
+GPT-4o mini,Present participial postnominal,0.65,0.672
+GPT-4o,Present participial postnominal,0.52,0.553
+Llama 3 8B Instruct,Present participial postnominal,0.1,0.133
+Llama 3 70B Instruct,Present participial postnominal,0.1,0.229
+Llama 3 8B (base),Present participial postnominal,0.01,-0.001
+Llama 3 70B (base),Present participial postnominal,0.06,0.068
+GPT-4o mini,Predicative adjectives,-0.18,-0.21
+GPT-4o,Predicative adjectives,-0.11,-0.19
+Llama 3 8B Instruct,Predicative adjectives,0.32,0.269
+Llama 3 70B Instruct,Predicative adjectives,0.28,0.234
+Llama 3 8B (base),Predicative adjectives,0.24,0.212
+Llama 3 70B (base),Predicative adjectives,0.23,0.197
+GPT-4o mini,Suasive verbs,-0.02,-0.001
+GPT-4o,Suasive verbs,0.12,0.175
+Llama 3 8B Instruct,Suasive verbs,-0.07,-0.08
+Llama 3 70B Instruct,Suasive verbs,-0.07,-0.072
+Llama 3 8B (base),Suasive verbs,0.16,0.23
+Llama 3 70B (base),Suasive verbs,0.1,0.103
+GPT-4o mini,Analytic negation,-0.35,-0.363
+GPT-4o,Analytic negation,-0.51,-0.528
+Llama 3 8B Instruct,Analytic negation,-0.23,-0.235
+Llama 3 70B Instruct,Analytic negation,-0.27,-0.284
+Llama 3 8B (base),Analytic negation,0.09,0.126
+Llama 3 70B (base),Analytic negation,0.05,0.019
+GPT-4o mini,Third-person pronouns,-0.14,-0.076
+GPT-4o,Third-person pronouns,-0.13,-0.063
+Llama 3 8B Instruct,Third-person pronouns,0.1,0.206
+Llama 3 70B Instruct,Third-person pronouns,0.05,0.141
+Llama 3 8B (base),Third-person pronouns,0.24,0.233
+Llama 3 70B (base),Third-person pronouns,0.23,0.192
+GPT-4o mini,Private verbs,-0.17,-0.184
+GPT-4o,Private verbs,-0.26,-0.286
+Llama 3 8B Instruct,Private verbs,0.29,0.337
+Llama 3 70B Instruct,Private verbs,0.2,0.174
+Llama 3 8B (base),Private verbs,0.28,0.283
+Llama 3 70B (base),Private verbs,0.27,0.25
+GPT-4o mini,Perfect aspect,-0.42,-0.424
+GPT-4o,Perfect aspect,-0.43,-0.41
+Llama 3 8B Instruct,Perfect aspect,0.16,0.191
+Llama 3 70B Instruct,Perfect aspect,0.09,0.091
+Llama 3 8B (base),Perfect aspect,-0.03,-0.003
+Llama 3 70B (base),Perfect aspect,-0.07,-0.064
+GPT-4o mini,Pro-verb ‘do’,-0.63,-0.562
+GPT-4o,Pro-verb ‘do’,-0.62,-0.566
+Llama 3 8B Instruct,Pro-verb ‘do’,-0.3,-0.27
+Llama 3 70B Instruct,Pro-verb ‘do’,-0.33,-0.291
+Llama 3 8B (base),Pro-verb ‘do’,0.06,0.058
+Llama 3 70B (base),Pro-verb ‘do’,0.04,-0.036
+GPT-4o mini,Present tense,-0.4,-0.37
+GPT-4o,Present tense,-0.5,-0.462
+Llama 3 8B Instruct,Present tense,-0.01,-0.011
+Llama 3 70B Instruct,Present tense,0.0,-0.025
+Llama 3 8B (base),Present tense,0.28,0.261
+Llama 3 70B (base),Present tense,0.27,0.266
+GPT-4o mini,Amplifiers,-0.25,-0.259
+GPT-4o,Amplifiers,-0.38,-0.434
+Llama 3 8B Instruct,Amplifiers,-0.33,-0.159
+Llama 3 70B Instruct,Amplifiers,-0.38,-0.408
+Llama 3 8B (base),Amplifiers,-0.07,-0.112
+Llama 3 70B (base),Amplifiers,-0.09,-0.143
+GPT-4o mini,Pronoun ‘it’,-0.17,-0.176
+GPT-4o,Pronoun ‘it’,-0.11,-0.106
+Llama 3 8B Instruct,Pronoun ‘it’,0.06,0.073
+Llama 3 70B Instruct,Pronoun ‘it’,0.06,0.007
+Llama 3 8B (base),Pronoun ‘it’,0.06,0.034
+Llama 3 70B (base),Pronoun ‘it’,0.04,0.047
+GPT-4o mini,Gerunds,0.38,0.411
+GPT-4o,Gerunds,0.35,0.355
+Llama 3 8B Instruct,Gerunds,0.11,0.127
+Llama 3 70B Instruct,Gerunds,0.15,0.188
+Llama 3 8B (base),Gerunds,-0.09,-0.11
+Llama 3 70B (base),Gerunds,-0.09,-0.067
+GPT-4o mini,First-person pronouns,-0.32,-0.411
+GPT-4o,First-person pronouns,-0.62,-0.667
+Llama 3 8B Instruct,First-person pronouns,0.15,0.131
+Llama 3 70B Instruct,First-person pronouns,0.12,0.079
+Llama 3 8B (base),First-person pronouns,0.35,0.381
+Llama 3 70B (base),First-person pronouns,0.3,0.294
+GPT-4o mini,Because,-0.5,-0.536
+GPT-4o,Because,-0.5,-0.536
+Llama 3 8B Instruct,Because,-0.34,-0.382
+Llama 3 70B Instruct,Because,-0.35,-0.444
+Llama 3 8B (base),Because,0.08,0.082
+Llama 3 70B (base),Because,0.02,-0.019
+GPT-4o mini,Split auxiliaries,-0.08,-0.086
+GPT-4o,Split auxiliaries,-0.2,-0.214
+Llama 3 8B Instruct,Split auxiliaries,0.17,0.154
+Llama 3 70B Instruct,Split auxiliaries,0.13,0.128
+Llama 3 8B (base),Split auxiliaries,-0.01,0.008
+Llama 3 70B (base),Split auxiliaries,-0.06,-0.019
+GPT-4o mini,Time adverbials,-0.21,-0.18
+GPT-4o,Time adverbials,-0.19,-0.18
+Llama 3 8B Instruct,Time adverbials,-0.26,-0.357
+Llama 3 70B Instruct,Time adverbials,-0.26,-0.243
+Llama 3 8B (base),Time adverbials,0.07,0.125
+Llama 3 70B (base),Time adverbials,0.06,0.075
+GPT-4o mini,"Though, although",-0.13,-0.123
+GPT-4o,"Though, although",0.09,0.163
+Llama 3 8B Instruct,"Though, although",-0.32,-0.303
+Llama 3 70B Instruct,"Though, although",-0.28,-0.269
+Llama 3 8B (base),"Though, although",-0.05,-0.082
+Llama 3 70B (base),"Though, although",-0.03,-0.027
+GPT-4o mini,Place adverbials,0.35,0.344
+GPT-4o,Place adverbials,0.33,0.331
+Llama 3 8B Instruct,Place adverbials,0.01,0.031
+Llama 3 70B Instruct,Place adverbials,-0.01,-0.036
+Llama 3 8B (base),Place adverbials,0.11,0.107
+Llama 3 70B (base),Place adverbials,0.17,0.125
+GPT-4o mini,Demonstrative pronouns,-0.5,-0.495
+GPT-4o,Demonstrative pronouns,-0.56,-0.544
+Llama 3 8B Instruct,Demonstrative pronouns,-0.28,-0.265
+Llama 3 70B Instruct,Demonstrative pronouns,-0.26,-0.223
+Llama 3 8B (base),Demonstrative pronouns,-0.01,0.004
+Llama 3 70B (base),Demonstrative pronouns,-0.03,-0.011
+GPT-4o mini,Predictive modals,-0.28,-0.321
+GPT-4o,Predictive modals,-0.43,-0.463
+Llama 3 8B Instruct,Predictive modals,-0.03,-0.108
+Llama 3 70B Instruct,Predictive modals,0.04,0.026
+Llama 3 8B (base),Predictive modals,0.11,0.117
+Llama 3 70B (base),Predictive modals,0.08,0.079
+GPT-4o mini,Indefinite pronouns,-0.22,-0.188
+GPT-4o,Indefinite pronouns,-0.18,-0.177
+Llama 3 8B Instruct,Indefinite pronouns,-0.11,-0.017
+Llama 3 70B Instruct,Indefinite pronouns,-0.12,-0.148
+Llama 3 8B (base),Indefinite pronouns,0.19,0.248
+Llama 3 70B (base),Indefinite pronouns,0.2,0.266
+GPT-4o mini,by-passives,-0.21,-0.176
+GPT-4o,by-passives,-0.17,-0.137
+Llama 3 8B Instruct,by-passives,0.06,0.09
+Llama 3 70B Instruct,by-passives,0.03,0.066
+Llama 3 8B (base),by-passives,0.04,0.087
+Llama 3 70B (base),by-passives,0.01,0.057
+GPT-4o mini,Synthetic negation,-0.37,-0.349
+GPT-4o,Synthetic negation,-0.27,-0.281
+Llama 3 8B Instruct,Synthetic negation,-0.33,-0.281
+Llama 3 70B Instruct,Synthetic negation,-0.34,-0.335
+Llama 3 8B (base),Synthetic negation,-0.02,-0.049
+Llama 3 70B (base),Synthetic negation,-0.04,-0.01
+GPT-4o mini,‘Wh-’ questions,-0.06,-0.094
+GPT-4o,‘Wh-’ questions,-0.25,-0.264
+Llama 3 8B Instruct,‘Wh-’ questions,0.16,0.104
+Llama 3 70B Instruct,‘Wh-’ questions,0.16,0.083
+Llama 3 8B (base),‘Wh-’ questions,0.11,0.134
+Llama 3 70B (base),‘Wh-’ questions,0.1,0.092
+GPT-4o mini,"If, unless",-0.16,-0.135
+GPT-4o,"If, unless",-0.3,-0.282
+Llama 3 8B Instruct,"If, unless",-0.29,-0.271
+Llama 3 70B Instruct,"If, unless",-0.27,-0.23
+Llama 3 8B (base),"If, unless",0.09,0.085
+Llama 3 70B (base),"If, unless",0.06,0.093
+GPT-4o mini,‘Seem’ and ‘appear’,0.12,0.085
+GPT-4o,‘Seem’ and ‘appear’,0.27,0.257
+Llama 3 8B Instruct,‘Seem’ and ‘appear’,0.12,0.123
+Llama 3 70B Instruct,‘Seem’ and ‘appear’,0.09,0.09
+Llama 3 8B (base),‘Seem’ and ‘appear’,0.0,-0.021
+Llama 3 70B (base),‘Seem’ and ‘appear’,0.02,0.001
+GPT-4o mini,Necessity modals,0.02,0.042
+GPT-4o,Necessity modals,-0.1,-0.085
+Llama 3 8B Instruct,Necessity modals,-0.22,-0.252
+Llama 3 70B Instruct,Necessity modals,-0.22,-0.215
+Llama 3 8B (base),Necessity modals,0.14,0.119
+Llama 3 70B (base),Necessity modals,0.12,0.126
+GPT-4o mini,Conjuncts,0.07,0.141
+GPT-4o,Conjuncts,-0.03,0.026
+Llama 3 8B Instruct,Conjuncts,-0.02,0.006
+Llama 3 70B Instruct,Conjuncts,0.09,0.099
+Llama 3 8B (base),Conjuncts,-0.01,-0.006
+Llama 3 70B (base),Conjuncts,0.02,0.05
+GPT-4o mini,Second-person pronouns,-0.39,-0.415
+GPT-4o,Second-person pronouns,-0.49,-0.508
+Llama 3 8B Instruct,Second-person pronouns,-0.21,-0.261
+Llama 3 70B Instruct,Second-person pronouns,-0.2,-0.244
+Llama 3 8B (base),Second-person pronouns,0.11,0.145
+Llama 3 70B (base),Second-person pronouns,0.07,0.079
+GPT-4o mini,Stranded prepositions,-0.16,-0.122
+GPT-4o,Stranded prepositions,-0.16,-0.169
+Llama 3 8B Instruct,Stranded prepositions,0.04,0.082
+Llama 3 70B Instruct,Stranded prepositions,0.05,0.124
+Llama 3 8B (base),Stranded prepositions,-0.04,-0.016
+Llama 3 70B (base),Stranded prepositions,-0.07,-0.076
+GPT-4o mini,‘Wh-’ relatives as subject,-0.21,-0.207
+GPT-4o,‘Wh-’ relatives as subject,-0.23,-0.204
+Llama 3 8B Instruct,‘Wh-’ relatives as subject,0.04,0.056
+Llama 3 70B Instruct,‘Wh-’ relatives as subject,0.01,-0.0
+Llama 3 8B (base),‘Wh-’ relatives as subject,0.03,0.004
+Llama 3 70B (base),‘Wh-’ relatives as subject,0.01,-0.029
+GPT-4o mini,Sentence relatives,-0.26,-0.25
+GPT-4o,Sentence relatives,-0.25,-0.25
+Llama 3 8B Instruct,Sentence relatives,0.02,0.048
+Llama 3 70B Instruct,Sentence relatives,0.06,0.08
+Llama 3 8B (base),Sentence relatives,0.0,0.017
+Llama 3 70B (base),Sentence relatives,-0.03,0.02
+GPT-4o mini,‘Wh-’ clauses,-0.17,-0.068
+GPT-4o,‘Wh-’ clauses,-0.24,-0.119
+Llama 3 8B Instruct,‘Wh-’ clauses,-0.06,-0.01
+Llama 3 70B Instruct,‘Wh-’ clauses,-0.14,-0.053
+Llama 3 8B (base),‘Wh-’ clauses,0.11,0.122
+Llama 3 70B (base),‘Wh-’ clauses,0.1,0.129
+GPT-4o mini,Discourse particles,-0.2,-0.229
+GPT-4o,Discourse particles,-0.2,-0.226
+Llama 3 8B Instruct,Discourse particles,-0.04,-0.128
+Llama 3 70B Instruct,Discourse particles,-0.04,-0.047
+Llama 3 8B (base),Discourse particles,0.14,0.146
+Llama 3 70B (base),Discourse particles,0.04,0.049
+GPT-4o mini,Hedges,-0.22,-0.177
+GPT-4o,Hedges,-0.16,-0.121
+Llama 3 8B Instruct,Hedges,-0.15,-0.136
+Llama 3 70B Instruct,Hedges,-0.13,-0.114
+Llama 3 8B (base),Hedges,-0.04,0.003
+Llama 3 70B (base),Hedges,-0.02,-0.03
+GPT-4o mini,Past participial clauses,0.33,0.392
+GPT-4o,Past participial clauses,0.36,0.415
+Llama 3 8B Instruct,Past participial clauses,0.11,0.088
+Llama 3 70B Instruct,Past participial clauses,0.1,0.128
+Llama 3 8B (base),Past participial clauses,-0.09,-0.089
+Llama 3 70B (base),Past participial clauses,-0.07,-0.06
+GPT-4o mini,‘That’ deletion,-0.11,-0.076
+GPT-4o,‘That’ deletion,-0.16,-0.16
+Llama 3 8B Instruct,‘That’ deletion,-0.1,-0.058
+Llama 3 70B Instruct,‘That’ deletion,-0.11,-0.12
+Llama 3 8B (base),‘That’ deletion,0.09,0.1
+Llama 3 70B (base),‘That’ deletion,0.11,0.086
+GPT-4o mini,Pied-piping relative clauses,-0.16,-0.152
+GPT-4o,Pied-piping relative clauses,-0.17,-0.174
+Llama 3 8B Instruct,Pied-piping relative clauses,-0.23,-0.223
+Llama 3 70B Instruct,Pied-piping relative clauses,-0.21,-0.218
+Llama 3 8B (base),Pied-piping relative clauses,-0.17,-0.179
+Llama 3 70B (base),Pied-piping relative clauses,-0.17,-0.174
+GPT-4o mini,‘That’ clauses as object,-0.13,-0.069
+GPT-4o,‘That’ clauses as object,-0.17,-0.128
+Llama 3 8B Instruct,‘That’ clauses as object,-0.12,-0.073
+Llama 3 70B Instruct,‘That’ clauses as object,-0.15,-0.104
+Llama 3 8B (base),‘That’ clauses as object,-0.02,0.01
+Llama 3 70B (base),‘That’ clauses as object,-0.03,0.009
+GPT-4o mini,‘That’ adjective complements,-0.06,-0.033
+GPT-4o,‘That’ adjective complements,-0.16,-0.177
+Llama 3 8B Instruct,‘That’ adjective complements,0.05,0.053
+Llama 3 70B Instruct,‘That’ adjective complements,0.02,0.051
+Llama 3 8B (base),‘That’ adjective complements,0.09,0.061
+Llama 3 70B (base),‘That’ adjective complements,0.06,0.047
+GPT-4o mini,Split infinitives,-0.05,-0.074
+GPT-4o,Split infinitives,-0.02,-0.046
+Llama 3 8B Instruct,Split infinitives,0.02,-0.019
+Llama 3 70B Instruct,Split infinitives,0.01,0.016
+Llama 3 8B (base),Split infinitives,-0.15,-0.111
+Llama 3 70B (base),Split infinitives,-0.13,-0.172
+GPT-4o mini,‘Wh-’ relatives as object,-0.25,-0.261
+GPT-4o,‘Wh-’ relatives as object,-0.27,-0.307
+Llama 3 8B Instruct,‘Wh-’ relatives as object,-0.28,-0.296
+Llama 3 70B Instruct,‘Wh-’ relatives as object,-0.26,-0.306
+Llama 3 8B (base),‘Wh-’ relatives as object,-0.1,-0.143
+Llama 3 70B (base),‘Wh-’ relatives as object,-0.1,-0.174

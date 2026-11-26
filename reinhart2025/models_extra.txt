@@ -1,0 +1,8 @@
+nanogpt:z-ai/glm-5.3-flash-uncensored
+nanogpt:deepseek/deepseek-v4.1-flash-uncensored
+nanogpt:Gemma-4-31B-Gembrain-uncensored-heretic
+nanogpt:qwen/qwen3.8-27b-antislop
+nanogpt:qwen/qwen3.8-27b
+mistralai/mistral-small-3.1-24b-instruct
+ollama:richardyoung/hemmingway-1:Q4_K_M
+google/gemini-3.8-flash:floor
